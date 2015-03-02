@@ -2480,10 +2480,15 @@ text-transform:uppercase;
 	  
 	/*--- google map ---*/  
 	/* bg img  */
-	.bgimg{background-image:url(SliderGStorage.jpg);
-	display:block;
-	max-width:100%;
-	height:480px;}
+	/*.bgimg {
+		background-image: url(SliderGStorage.jpg);
+		display: block;
+		max-width: 100%;
+		height: 480px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}*/ /*image was moved to div*/
+	 
 	
 	main{background-color:#f7f7f7;}
 	
