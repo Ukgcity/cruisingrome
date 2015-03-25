@@ -4,6 +4,12 @@ var jqAccordian = jQuery.noConflict();
 
 jQuery(document).ready(function ($) {
 
+    var MOBILEBREAKPOINT = 480;
+
+    if ($(window).width() <= MOBILEBREAKPOINT) {
+      create_acc_from_tabs();
+    }
+
     jqAccordian(".accordion").each(function () {
         var $initialIndex = jqAccordian(this).attr('data-initialIndex');
         if ($initialIndex == undefined) {
@@ -87,3 +93,33 @@ jQuery(document).ready(function ($) {
         $mtog(".nav-button,.my_custom_menu").toggleClass("open");
     });
 });
+
+/* CREATE ACCORDIAN FROM EXISTING TABS */
+function create_acc_from_tabs() {
+    $(".tabs-container").each(function () {
+      if($(this).next().hasClass('accordion') != true) {
+        content_obj     = new Object;
+        content_item_id = 0;
+        div_acc         = $('<div>').addClass('accordion');
+        tabs_container  = $(this);
+
+        $(tabs_container).find('div.tab-content > div').each(function() {
+          content_obj[content_item_id] = $(this).html();
+
+          content_item_id++;
+        });
+
+        content_item_id = 0;
+
+        $(tabs_container).find('ul.tabs > li > a').each(function() {
+          div_acc.append($('<h2>').addClass('accordion-title').text($(this).text()));
+          div_acc.append($('<div>').addClass('accordion-content').append(content_obj[content_item_id]));
+
+          content_item_id++;
+        });
+
+        $(this).append(div_acc);
+      }
+    });
+}
+/* CREATE ACCORDIAN FROM EXISTING TABS */
