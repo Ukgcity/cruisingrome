@@ -4,11 +4,8 @@ var jqAccordian = jQuery.noConflict();
 
 jQuery(document).ready(function ($) {
 
-    var MOBILEBREAKPOINT = 480;
+    create_acc_from_tabs();
 
-    if ($(window).width() <= MOBILEBREAKPOINT) {
-      create_acc_from_tabs();
-    }
 
     jqAccordian(".accordion").each(function () {
         var $initialIndex = jqAccordian(this).attr('data-initialIndex');
@@ -100,7 +97,7 @@ function create_acc_from_tabs() {
       if($(this).next().hasClass('accordion') != true) {
         content_obj     = new Object;
         content_item_id = 0;
-        div_acc         = $('<div>').addClass('accordion');
+        div_acc         = $('<div>').addClass('accordion accordion-mobile');
         tabs_container  = $(this);
 
         $(tabs_container).find('div.tab-content > div').each(function() {
