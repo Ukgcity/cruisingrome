@@ -230,6 +230,7 @@ h1, h2, h3, h4, h5, h6	{ margin-bottom: 8px; }
 	background: url(bg1.1.png) repeat scroll 0 0 #FFFFFF;
 	position: relative; 
 	margin: 0 auto; 
+	padding-top: 91px;
 }
 .container { position: relative; margin: 0 auto; width: 78% /*980px*/ ; }  
 #main-content { border-top: 1px solid #FFFFFF; border-bottom: 1px solid #EEEEEE; padding: 60px 0; }
@@ -270,6 +271,10 @@ h1, h2, h3, h4, h5, h6	{ margin-bottom: 8px; }
 }
 #navigation a:hover { background: none; color: #47AEDE; text-decoration: none; }
 #navigation li:last-child a { padding-right: 0; }
+#navigation ul.nav-sub-menu { display: none; position: absolute; background-color: white; z-index: 999; width: 100%; }
+#navigation ul.nav-sub-menu li { clear: both; padding: 5px 0; }
+#navigation li:hover ul.nav-sub-menu { display: block; }
+#navigation li.has-sub-menu a { float: none; display: block; }
 #wsite-menus .wsite-menu { background: #3F454A; z-index: 2; }
 #wsite-menus .wsite-menu li a { 
 	background: #3F454A; 
@@ -1190,7 +1195,7 @@ IMAGE WIDGET STYLE 4 CONTENT STYLEING
 	height:auto;
 	padding-bottom:10px;
 	border: 1px solid #CCC;
-	height:300px;
+	min-height:300px;
 }
 .secabt {
 	width:100%; 
@@ -1233,7 +1238,18 @@ IMAGE WIDGET STYLE 4 CONTENT STYLEING
 }
 
 .ttlbox h1{padding: 0 20px;}
-.ttlbox {background:#fff;display:inline-block; width:94.7%; margin:1.1%; position:relative;float:left;height:auto;padding-bottom:10px;border: 1px solid #CCC;height:150px;}
+.ttlbox { 
+	background:#fff;
+	display:inline-block; 
+	width:94.7%; 
+	margin:1.1%; 
+	position:relative;
+	float:left;
+	padding-bottom:10px;
+	border: 1px solid #CCC;
+	min-height:150px;
+	height: auto;
+}
 .ttlbox div.paragraph{padding: 0 20px;}
 .ttlbox p{padding: 0 20px;}
 
@@ -1349,7 +1365,17 @@ IMAGE WIDGET STYLE 4 CONTENT STYLEING
 .top_bar ul li { padding: 0px 8px; font-size: 12px; float: left; border-right:1px solid #ccc; } 
 .top_bar ul li a { text-decoration: none; color:#ccc; }  
 .top_bar ul li a:hover { color: #fff; }
-#header { min-height: 90px; display: block; position: relative; z-index: 2; }
+#header {
+	min-height: 90px;
+	display: block;
+	/*position: relative;
+	z-index: 2;*/
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+	background: white;
+}
 header:before { 
 	background: url(header-shadow.png) no-repeat scroll center top transparent; 
 	bottom: -29px; 
@@ -1364,7 +1390,51 @@ header:before {
 #header .container { padding: 0; }
 
 /* --- Logo --- */
-#logo { left: 0; margin: 0; padding: 0; position: absolute; top: 10px; }
+#logo { left: 0; margin: 0; padding: 0; top: 10px; float: left; padding-right: 25px; }
+
+.lan-header { float: left; position: relative; width: 100px; height: 70px; }
+.lan-header .lan-current-item { display: block; background-position: 18px center; height: 100%; }
+.lan-header:hover { background: #f1f2f4; }
+.lan-header:hover .lan-list { display: block !important; }
+.lan-header .lan-current-item::after {
+	position: relative;
+	top: 50%;
+	-ms-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	content: ' ';
+	right: auto;
+	left: 42px;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #232f49;
+	pointer-events: none;
+}
+.lan-list {
+	display: none;
+	/*padding: 0;*/
+	line-height: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	z-index: 9001;
+	top: 100%;
+	width: 100%;
+	padding: 9px 0;
+	margin: 0;
+	background: #232f49;
+}
+.lan-list-item { background: 18px center; }
+.lan-list-item a { display: block; padding: 10px 0px 10px 44px; color: white; }
+.lan-list-item:hover { background-color: #151617; }
+.lan-en { background-image: url('gb.png'); background-repeat: no-repeat; }
+.lan-es { background-image: url('es.png'); background-repeat: no-repeat; }
+.lan-pt-br { background-image: url('pt.png'); background-repeat: no-repeat; }
+.lan-de { background-image: url('de.png'); background-repeat: no-repeat; }
+.lan-it { background-image: url('it.png'); background-repeat: no-repeat; }
 
 /* --- Header & Top Bar --- */
 /* --- Navigation --- */
@@ -1707,7 +1777,7 @@ div.pricepack span :after {
 
 /* --- Blocks Exc --- */
 /*Image*/
-.exclist { float:left; min-height: 173px; background: none repeat scroll 0% 0% #FFF; width:auto; margin-bottom:30px; display:block; }
+.exclist { float:left; min-height: 173px; background: none repeat scroll 0% 0% #FFF; width:100%; margin-bottom:30px; display:block; }
 .exclist:after { display: table; clear: both; content: ""; }
 .exclist:before,exclist:after { box-sizing:border-box; }
 .exclist .figexc {
@@ -1745,7 +1815,7 @@ div.pricepack span :after {
 .exclist .excboxdestro > :first-child > * { border-bottom: 1px solid #F5F5F5; padding: 0 0 10px 0; }                   /*?*/
 .exclist .excboxdestro > * > :first-child { border-right: 1px solid #F5F5F5; padding: 0 15px 0 0; text-align: left; }  /*?*/
 .exclist .excboxdestro > * > :last-child { width: 120px; }
-.exclist .excboxdestro > * > * { text-align: center; padding: 0px 15px 0px; vertical-align: middle; display: table-cell; }
+.exclist .excboxdestro > * > * { text-align: center; padding: 0px;/*0px 15px 0px*/ vertical-align: middle; display: table-cell; }
 .exclist .excboxdestro .h2excbox {
 	float:left;
 	display:block;
@@ -1905,10 +1975,10 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 /* ====================================================== HOME PAGE ======================================================= */
 	.container { width: 90%; }
 /*Logo*/
-	#logo img { margin: 0 143px 0 10px; }
+	#logo img { margin: 0 90px 0 10px;/*0 143px 0 10px*/ }
 /*Logo*/
 
-	#navigation { display: none; }
+	/*#navigation { display: none; }*/
 
 /* callout custom*/ /*div menu*/
 	div.menu { height:50px; width:100%; background-color:#fff; box-shadow:0px 2px 1px rgba(0, 0, 0, 0.2); }
@@ -2003,13 +2073,14 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 }
 
 @media only screen and (min-width: 839px) { 
-        .nav-button { display: none; } 
+        .nav-button { display: none; }
 	#for_mobile_navi { display: none; }
 }
 
 @media only screen and (max-width: 838px) { 
 /* ====================================================== HOME PAGE ======================================================= */
 	body { padding-top: 50px; }
+	#page-wrap { padding-top: 0; }
 
 /* --- Mobile Toggle Button --- */
 	.nav-button { 
@@ -2080,6 +2151,8 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 /* bg img  */
 
 /* MENU */
+	#header { position: relative; }
+	#header .lan-header { display: none; }
 	div.menu { height: auto; width: 100%; background-color: #fff; box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2); }
 	div.menu-center-box { height: auto; margin: auto; padding-top: 3px; width: 90%; }
 	div.menu-center-box div.menu-item-box:first-child { height: auto; width: 100% !important; float: none; }
@@ -2135,7 +2208,7 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 /*Tabs-container*/
 
 /*Content*/
-	.exclist { margin:0 10px 30px; }
+	/*.exclist { margin:0 10px 30px; }*/
 	.exclist .figexc { width: 30.3333%; text-align: center; }
 	.exclist .excboxdestro { width: 66.6667%; padding:0; }
 	.exclist .excboxdestro > * > :first-child { padding: 5px 15px; } 

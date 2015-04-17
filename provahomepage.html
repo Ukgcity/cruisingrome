@@ -61,37 +61,6 @@
     <!-- PAGE WRAP -->
     <div id="page-wrap" class="wide">
 
-        <!-- TOP BAR -->
-	<section class="top_bar">
-	<div class="container">
-
-                <div class="call_us">
-                    <span class="ico"></span>
-                </div>
-                <div class="lan">
-                    <ul>
-                        <li> <!--Delete class="first"-->
-                            <a id="ctl00_UC_Language_HyperLinkITA" href="../home.aspx">EN</a>
-                        </li>
-                        <li>
-                            <a id="ctl00_UC_Language_HyperLinkENG" href="file:///C|/EN/Pages/home.aspx">ES</a>
-                        </li>
-                        <li>
-                            <a id="ctl00_UC_Language_HyperLinkFRA" href="file:///C|/FR/Pages/home.aspx">PT/BR</a>
-                        </li>
-                        <li>
-                            <a id="ctl00_UC_Language_HyperLinkDEU" href="file:///C|/DE/Seiten/home.aspx">DE</a>
-                        </li>
-                        <li>
-                            <a id="ctl00_UC_Language_HyperLinkESP" href="file:///C|/ES/Paginas/home.aspx">IT</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--<div class="socials">{social}</div>--> <!--Delete-->
-	</div>
-        </section>
-        <!-- / TOP BAR -->
-
         <!-- HEADER -->
         <header id="header">
             <div class="container clearfix">
@@ -101,19 +70,39 @@
                 </a>
                 <!-- / LOGO -->
 
+		<nav class="lan-header">
+		    <a href="#" class="lan-current-item lan-en">&nbsp;</a>
+		    <ul class="lan-list">
+		       <li class="lan-list-item lan-en"><a href="/en">EN</a></li>
+		       <li class="lan-list-item lan-es"><a href="/es">ES</a></li>
+		       <li class="lan-list-item lan-pt-br"><a href="/pt-br">PT/BR</a></li>
+		       <li class="lan-list-item lan-de"><a href="/de">DE</a></li>
+		       <li class="lan-list-item lan-it"><a href="/it">IT</a></li>
+		    </ul>
+		</nav>
+
                 <!-- NAVIGATION -->
                 <nav id="navigation">
                     <ul>
-                        <li>Shore Excurions</li>
-                        <li>Attraction</li>
-                        <li>Luggage</li>
-                        <li>Transfers</li>
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li class="has-sub-menu">
+				<a>Our service</a>
+				<ul class="nav-sub-menu">
+					<li><a>Services List</a></li>
+					<li><a>Luggage</a></li>
+					<li><a>Transfers</a></li>
+				</ul>
+			</li>
+                        <li><a>Our garancy</a></li>
                     </ul>
                 </nav>
                 <!-- / NAVIGATION -->
             </div>
         </header>
         <!-- / HEADER -->
+
+	<div class="container clearfix"></div>
 
         <!-- CONTENT -->
         <main>
