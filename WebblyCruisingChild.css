@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6	{ margin-bottom: 8px; }
 	background: url(bg1.1.png) repeat scroll 0 0 #FFFFFF;
 	position: relative; 
 	margin: 0 auto; 
-	padding-top: 91px;
+	padding-top: 122px;
 }
 .container { position: relative; margin: 0 auto; width: 78% /*980px*/ ; }  
 #main-content { border-top: 1px solid #FFFFFF; border-bottom: 1px solid #EEEEEE; padding: 60px 0; }
@@ -1351,7 +1351,11 @@ IMAGE WIDGET STYLE 4 CONTENT STYLEING
 	font-weight: 300; 
 	text-align: left; 
 	padding: 8px 0 6px;
-	height:17px; 	
+	height: 17px;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 0;
 }  
 .top_bar .call_us { display: inline-block; float: left; font-size: 11px; line-height: 14px; padding-top: 3px; }
 .top_bar .call_us .ico { 
@@ -1372,7 +1376,7 @@ IMAGE WIDGET STYLE 4 CONTENT STYLEING
 	z-index: 2;*/
 	position: fixed;
 	width: 100%;
-	top: 0;
+	top: 31px;
 	z-index: 999;
 	background: white;
 }
@@ -1390,7 +1394,7 @@ header:before {
 #header .container { padding: 0; }
 
 /* --- Logo --- */
-#logo { left: 0; margin: 0; padding: 0; top: 10px; float: left; padding-right: 25px; }
+#logo { left: 0; margin: 0; padding: 0; top: 10px; float: left; padding: 12px 25px 0 0; }
 
 .lan-header { float: left; position: relative; width: 100px; height: 70px; }
 .lan-header .lan-current-item { display: block; background-position: 18px center; height: 100%; }
@@ -1975,7 +1979,7 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 /* ====================================================== HOME PAGE ======================================================= */
 	.container { width: 90%; }
 /*Logo*/
-	#logo img { margin: 0 90px 0 10px;/*0 143px 0 10px*/ }
+	#logo img { margin: 10px 90px 0 10px;/*0 143px 0 10px*/ }
 /*Logo*/
 
 	/*#navigation { display: none; }*/
@@ -2138,6 +2142,7 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 /* --- Mobile Menu --- */
 
 /* --- Top Bar --- */
+	.top_bar { display: none; }
 	.container { width: 100%; } 
 	.top_bar .call_us { text-align: center; width: 20%; }
 	.top_bar .lan {	width:64%;}
@@ -2151,7 +2156,7 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 /* bg img  */
 
 /* MENU */
-	#header { position: relative; }
+	#header { position: relative; top: 0; z-index: 2; }
 	#header .lan-header { display: none; }
 	div.menu { height: auto; width: 100%; background-color: #fff; box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2); }
 	div.menu-center-box { height: auto; margin: auto; padding-top: 3px; width: 90%; }
