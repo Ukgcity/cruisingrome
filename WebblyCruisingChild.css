@@ -1185,38 +1185,6 @@ IMAGE WIDGET STYLE 4 CONTENT STYLEING
 }*/ /*Unused*/
 /*provaboxdiviso */
 /*h4 small { font-weight: normal; line-height: 1; } */
-.secabt .abtbox {
-	background:#fff;
-	display:inline-block; 
-	width:30%; 
-	margin:1.1%; 
-	position:relative;
-	float:left;
-	height:auto;
-	padding-bottom:10px;
-	border: 1px solid #CCC;
-	min-height:300px;
-}
-.secabt {
-	width:100%; 
-	min-height:350px; 
-	position:relative; 
-	-moz-box-sizing: content-box; 
-	-webkit-box-sizing: content-box; 
-	box-sizing: content-box;
-}       
-.secabt .abtbox .hover-img-content { height:auto; padding:5px; }
-.secabt .abtbox .hover-img-content h3 { padding:0 20px; }
-.secabt .abtbox .hover-img-content p { padding:0 20px; }
-.secabt .abtbox .hover-img-content .price { padding:0 0 0 20px;	font-size:16px; color:#f07d31; }
-.secabt .abtbox .label:before { 
-	content: "";
-	position: absolute;
-	bottom: -5px;
-	left: 0px;
-	border-top: 5px solid #904610;
-	border-left: 5px solid transparent;
-}
 .secabtx .abtbox .label { 
 	position: absolute; 
 	top: 10px; 
@@ -1316,10 +1284,6 @@ IMAGE WIDGET STYLE 4 CONTENT STYLEING
 	color:#b0b1a8;
 	font-size:20px;
 }
-.ourgarancy { padding: 20px; margin: 0; list-style: none; background:#fff; }
-.ourgarancy li { line-height: 1.6em; }
-.ourgarancy a { text-decoration: none; color: #000; }
-.ourgarancy a span { text-decoration: none; padding-right: .4em; }
 /*.size-2 { font-size: 2em; }
 .size-3 { font-size: 3em; }
 .size-4 { font-size: 4em; }*/ /*Unused*/
@@ -1936,7 +1900,49 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 	position: relative;
 }
 .long-description .description { display:block; float:left; }
+.ourgarancy { padding: 20px; margin: 0; list-style: none; background:#fff; }
+.ourgarancy li { line-height: 1.6em; }
+.ourgarancy a { text-decoration: none; color: #000; }
+.ourgarancy a span { text-decoration: none; padding-right: .4em; }
+
 /* ===================================================== CLASSICAL_ROME =================================================== */
+
+/* ======================================================== ABOUT US ====================================================== */
+.secabt .abtbox {
+	background:#fff;
+	display:inline-block; 
+	width:30%; 
+	margin:1.1%; 
+	position:relative;
+	float:left;
+	height:auto;
+	padding-bottom:10px;
+	border: 1px solid #CCC;
+	min-height:300px;
+}
+.secabt {
+	width:94.7%; 
+	min-height:350px; 
+	position:relative; 
+	-moz-box-sizing: content-box; 
+	-webkit-box-sizing: content-box; 
+	box-sizing: content-box;
+	display: inline-block;
+}      
+.secabt .abtbox .hover-img-content { height:auto; padding:5px; }
+.secabt .abtbox .hover-img-content h3 { padding:0 20px; text-align:center; }
+.secabt .abtbox .hover-img-content p { padding:0 20px; }
+/*.secabt .abtbox .hover-img-content .price { padding:0 0 0 20px; font-size:16px; color:#f07d31; }*/
+/*.secabt .abtbox .label:before { 
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0px;
+	border-top: 5px solid #904610;
+	border-left: 5px solid transparent;
+}*/
+/* ======================================================== ABOUT US ====================================================== */
+
    
 @media only screen and (min-width: 1200px) {
 /* ====================================================== HOME PAGE ======================================================= */
@@ -2071,7 +2077,7 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 /* ===================================================== CLASSICAL_ROME =================================================== */
 
 /* ======================================================= ABOUT US ======================================================= */
-	.container { width: 96%; }
+	.container { width: 97%;/*96%*/ }
 	.three-fourth { width: 65%; }
 /* ======================================================= ABOUT US ======================================================= */
 }
@@ -2079,7 +2085,7 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 @media only screen and (min-width: 839px) { 
         .nav-button { display: none; }
 	#for_mobile_navi { display: none; }
-}
+}    
 
 @media only screen and (max-width: 838px) { 
 /* ====================================================== HOME PAGE ======================================================= */
@@ -2142,7 +2148,7 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 /* --- Mobile Menu --- */
 
 /* --- Top Bar --- */
-	.top_bar { display: none; }
+	/*.top_bar { display: none; }*/
 	.container { width: 100%; } 
 	.top_bar .call_us { text-align: center; width: 20%; }
 	.top_bar .lan {	width:64%;}
@@ -2151,12 +2157,12 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 	#logo { float: none; text-align: center; width: 100%; }
 
 /* bg img  */
-	.bgimg { padding-top: 230px; } 
+	.bgimg { padding-top: 230px; margin-top: 123px; } 
 	.bgimg h1 { font-size: 20px; padding: 5px 10px 5px 7px; width: 60%; }
 /* bg img  */
 
 /* MENU */
-	#header { position: relative; top: 0; z-index: 2; }
+	#header { /*position: relative;*/ top: 82px; z-index: 1000; position:fixed; }
 	#header .lan-header { display: none; }
 	div.menu { height: auto; width: 100%; background-color: #fff; box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2); }
 	div.menu-center-box { height: auto; margin: auto; padding-top: 3px; width: 90%; }
@@ -2247,14 +2253,15 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 	.container { width: 95%; }
 	#logo { float: none; text-align: center; width: 100%; }
 	#navigation { display: none; }
-	.nav-button { display: block; }
-	.my_custom_menu { display: block; }
+	.nav-button { display: block; position:fixed; top:40px; }
+	.my_custom_menu { display: block; position:fixed; top:32px; }
 	.wsite-multicol-col { margin: 15px auto !important; width: 98%; }
 	.one-half, .one-third, .one-fourth, .three-fourth, .custom-blocks .block, .three-fourth {
 		width: 100%;
 		text-align: center !important;
 	}
 	#content { padding-bottom: 20px; }
+	.secabt .abtbox { width:47%; min-height: 500px; }
 	#footer .container { padding: 0; }
 /* ======================================================= ABOUT US ======================================================= */
 }
@@ -2341,12 +2348,12 @@ dl.term-description dd { line-height: 1.3333em; float: left; width: 40%; padding
 /* ===================================================== CLASSICAL_ROME =================================================== */
 
 /* ======================================================= ABOUT US ======================================================= */
- 	.container { width: 90%; }
 	.top_bar { height: 34px; text-align: center; }
 	.top_bar .call_us { float: none; text-align: center; width: 100%; }
 	.top_bar .socials { margin-top: 10px; float: none; }
 	.wsite-social, .wsite-editor .wsite-social { width: 100%; text-align: center; }
 	.wsite-multicol-col { margin: 15px auto !important; width: 94%; }
+	.secabt .abtbox { width:100%; min-height: 200px; }
 /* ======================================================= ABOUT US ======================================================= */
 }
 /* ========== NEW STYLE ========== */
