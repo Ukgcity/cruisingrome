@@ -89,6 +89,23 @@ jQuery(document).ready(function ($) {
     $mtog(".nav-button").click(function () {
         $mtog(".nav-button,.my_custom_menu").toggleClass("open");
     });
+
+
+    $("#our_service").click(function(e) {
+      e.preventDefault();
+
+      if($(this).hasClass("navigation-item-active")) {
+        $("#our-service-expanded-menu").parent().slideUp();
+        $("#our-service-expanded-menu").hide(300);
+        $(this).removeClass("navigation-item-active");
+        $(this).find("i").removeClass("up_arrow").addClass("down_arrow");
+      } else {
+        $("#our-service-expanded-menu").show();
+        $("#our-service-expanded-menu").parent().slideDown(300);
+        $(this).addClass("navigation-item-active");
+        $(this).find("i").removeClass("down_arrow").addClass("up_arrow");
+      }
+    });
 });
 
 /* CREATE ACCORDIAN FROM EXISTING TABS */

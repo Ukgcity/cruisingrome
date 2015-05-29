@@ -83,7 +83,8 @@
             <div class="container clearfix">
                 <!-- LOGO -->
                 <a id="logo" href="/rome-on-you-own-by-bus.html">
-                    <img src="http://storage.googleapis.com/cruisingrome/home-img/Logo.png" alt="Cruising Rome Logo">
+                    <span style="display: inline-block; height: 100%; vertical-align: middle;"></span> <!--NEW STYLE-->   
+                    <img src="http://storage.googleapis.com/cruisingrome/home-img/Logo.png" alt="Cruising Rome Logo" style="display: inline-block; vertical-align: middle;"> <!--NEW STYLE-->
                 </a>
                 <!-- / LOGO -->
 
@@ -103,18 +104,42 @@
                     <ul>
                         <li><a>Home</a></li>
                         <li><a>About us</a></li>
-                        <li class="has-sub-menu">
-				<a>Our service</a>
-				<ul class="nav-sub-menu">
-					<li><a>Services List</a></li>
-					<li><a>Luggage</a></li>
-					<li><a>Transfers</a></li>
-				</ul>
-			</li>
+                        <li>
+                            <a id="our_service">Our service
+                              <i class="down_arrow"></i>
+                            </a>
+                        </li>
                         <li><a>Our garancy</a></li>
                     </ul>
                 </nav>
                 <!-- / NAVIGATION -->
+            </div>
+            <div class="container clearfix navigation_dropdown_menu">
+                <div id="our-service-expanded-menu">
+                    <div class="item">				
+                                <a href="/tours">
+				<img src="new/tours-activities-icon.png" class="item-image">
+				<h3>Services List</h3>
+				<p>Attractions, Adventure &amp; Sightseeing</p>
+				</a>
+                     </div>
+                     <div class="item">
+                                <a href="/tours">
+				<img src="new/rentals-icon.png" class="item-image">
+				<h3>Luggage</h3>
+				<p>Attractions, Adventure &amp; Sightseeing</p>
+				</a>
+
+                     </div>
+                     <div class="item"> 
+                                <a href="/tours">
+				<img src="new/accommodation-icon.png" class="item-image">
+				<h3>Transfers</h3>
+				<p>Attractions, Adventure &amp; Sightseeing</p>
+				</a>
+
+                     </div>
+                </div>
             </div>
         </header>
 		<!-- / HEADER -->
