@@ -1,2 +1,0 @@
-1. Is the class header - shadow? how to look it?
-2. a href where link in class="port4box"  class="ttlebtn"  class="rightbtn"  class="btndetail"
