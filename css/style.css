@@ -387,12 +387,18 @@ span.text_comment { font-size:12px; color:#8e001c; }
 .features_glyphicons { background: url('../img/excursion_glyphicons.png') left center no-repeat; }
 .features_glyphicons2 { background: url('../img/excursion_glyphicons2.png') left center no-repeat; }
 /*TOP SHORE EXURSION*/
-
 /*SIDEBAR*/
 
 .similar_bg { background-color:#f2f1ef; }
 
 /*******************************EXCURSION*******************************/
+
+/*******************************ABOUT US*******************************/
+.about_us_promo { background-color:#8e001c; }
+/*******************************ABOUT US*******************************/
+
+
+
 
 /*******************************MEDIA QUERY*******************************/
 /*XXLarge screens*/
