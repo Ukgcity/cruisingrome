@@ -440,7 +440,7 @@ span.text_comment { font-size:12px; color:#8e001c; }
 .about_us_check { background: url('../img/about_us_check.png') left center no-repeat; }
 /*******************************ABOUT US*************** ****************/
 
-/*******************************LUGGAGE*************** ****************/
+/*******************************LUGGAGE*******************************/
 .luggage-bg {
 	background-image: url('../img/luggage_bg.jpg');
 	display: block;                                                                    
@@ -464,9 +464,16 @@ span.text_comment { font-size:12px; color:#8e001c; }
 	left:20%;
 	line-height: 1.21;
 }
+/*******************************LUGGAGE*******************************/
 
-/*******************************LUGGAGE*************** ****************/
-
+/*******************************LUGGAGE DELIVERY*******************************/
+.luggage_cargo { background: url('../img/luggage_delivery_cargo.png') left center no-repeat; }
+.luggage_alarm { background: url('../img/luggage_delivery_alarm.png') left center no-repeat; }
+.luggage_group { background: url('../img/luggage_delivery_group.png') left center no-repeat; }
+.luggage_compass { background: url('../img/luggage_delivery_compass.png') left center no-repeat; }
+.luggage_wallet { background: url('../img/luggage_delivery_wallet.png') left center no-repeat; }
+.luggage_old_man { background: url('../img/luggage_delivery_old_man.png') left center no-repeat; }
+/*******************************LUGGAGE DELIVERY*******************************/
 
 /*******************************MEDIA QUERY*******************************/
 /*XXLarge screens*/
