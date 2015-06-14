@@ -48,9 +48,30 @@ figure { width:100%; margin:0; }
 .top-bar { min-height: 65px; display: block; position: fixed; width: 100%; z-index: 999; background: white; }
 .top-bar img { margin-left: 11%; display: inline-block; vertical-align: middle; }
 
+/*GENERAL CLASSES*/
 .general_padding_h2 { padding:50px 0; }
-.padding_bottom_text { padding-bottom: 70px; }
+.general_padding_bottom_text { padding-bottom: 70px; }
 .hr_white { border-color:white; }
+   /*figure_circle*/
+.circle_img { border-radius: 50%; border: 5px solid white; object-fit: cover; }
+   /*figure_circle*/
+   /*label_for_price*/
+.imgHolder { position:relative;  border: 5px solid white; }
+.imgHolder img { width:100%; margin:0 !important; }
+.imgHolder span { position:absolute; top:0; left:0; width:86px; text-align:left; padding-left:5px; font-weight:300; font-size:18px; }
+.imgHolder span:before {
+	content:""; /*must be declared on a pseudo element*/
+	position:absolute; /*allows positioning using left right top and bottom properties*/
+	right:-13px; /*we want it on far right*/
+	top:0; /*since it's the same height, you can declare this as bottom:0; instead*/
+}
+   /*label_for_price*/
+   /*comboimg*/
+.comboimg { padding:5px 5px 13px; } /*need change-resize image*/
+.img_bg { box-shadow: 0 4px 0 0 rgba(142, 142, 142, 0.2); background:white; border:solid 5px #FFFFFF; }
+.comboimg img { width:245px; height:150px; }
+   /*comboimg*/
+/*GENERAL CLASSES*/
                                            
 /*NAVIGATION MENU*/
 #navigation { float: left; height:auto; width:auto; display: inline; } 
@@ -209,45 +230,24 @@ figure { width:100%; margin:0; }
 /*SECTION PROMO*/
 
 /*BOOK SECTION*/
-.section-book {	background: #f3f3f3; padding:70px 0; }
-.section-book .supporticons img { border-radius: 50%; border: 5px solid white; object-fit: cover; }
-.section-book h3 { font-size: 25px; font-weight: 700; color:#565656; }
+.section-book {	background: #f3f3f3; padding: 70px 0; }
+.section-book h3 { font-size: 25px; color:#565656; }
 /*BOOK SECTION*/
 
 /*MOST SECTION*/
 .section-most {	background: #f8f8f8;}
-.supporticons img { max-height: 200px; margin: 1rem 0 0 0; }
-.imgHolder { position:relative;  border: 5px solid white; }
-.imgHolder img { width:100%; margin:0; }
-.imgHolder span { 
-	position:absolute; 
-	top:0; 
-	left:0; 
-	background-color:#ffb300; 
-	color:white; 
-	font-weight:300; 
-	font-size:18px; 
-	width:86px;
-	text-align:left;
-	padding-left:5px;
-}
-.imgHolder span:before {
-	content:""; /*must be declared on a pseudo element*/
-	position:absolute; /*allows positioning using left right top and bottom properties*/
+.supporticons img { max-height: 200px; margin: 1rem 0 0 0; } 
+.imgholder_label_yellow { background-color:#ffb300; }
+.imgholder_label_yellow:before { 	
 	border-right:13px solid transparent; /*This is your color of the arrow*/
 	border-top:13px solid #ffb300; /*half the height*/
 	border-bottom:14px solid #ffb300; /*half the height*/
-	right:-13px; /*we want it on far right*/
-	top:0; /*since it's the same height, you can declare this as bottom:0; instead*/
 }
 .section-most p { color:#8e001c; font-weight:700; font-size:18px; text-transform:uppercase; }
 /*MOST SECTION*/
 
 /*COMBO DEALS*/
 .combo_deals { background: #f3f3f3; }
-.comboimg { padding:5px 5px 13px; } /*need change-resize image*/
-.img_bg { box-shadow: 0 4px 0 0 rgba(142, 142, 142, 0.2); background:white; border:solid 5px #FFFFFF; }
-.comboimg img { width:245px; height:150px; }
 .combo_deals h3 { color:#484747; text-align:left; margin:0; line-height:3; }
 .combo_deals .button { padding: 14px 61px; }
 /*COMBO DEALS*/
@@ -267,13 +267,7 @@ figure { width:100%; margin:0; }
 	margin:35px 0 10px 115px;
 }
 .left_column span { color:#8e001c; }
-.span_cr { 
-	font-family: 'Bree Serif'; 
-	font-weight: 400; 
-	font-size: 70px; 
-	color: white !important; 
-	text-shadow: 1px 1px 1px rgb(174, 172, 172); 
-}
+.span_cr { font-family: 'Bree Serif'; font-weight: 400; font-size: 70px; color: white !important; text-shadow: 1px 1px 1px rgb(174, 172, 172); }
 .figure { 
 	background:white; 
 	-webkit-border-radius: 10px; 
@@ -423,8 +417,17 @@ span.text_comment { font-size:12px; color:#8e001c; }
 .about-us-promo p { color:white; font-weight:400; font-size:20px; }
 .about-us-section-book h3 { font-size:24px; }
 .about-us-section-book p { font-weight:300; font-size:18px; }
+.about-us-section-book .circle_img { border:1px solid #f4f4f4; padding:2px; }
+.imgholder_label_red { background-color:#8e001c; }
+.imgholder_label_red:before { 	
+	border-right:13px solid transparent; /*This is your color of the arrow*/
+	border-top:13px solid #8e001c; /*half the height*/
+	border-bottom:14px solid #8e001c; /*half the height*/
+}
+.section-top-for { background-color:#f3f3f3; }
 
-/*******************************ABOUT US*******************************/
+
+/*******************************ABOUT US*************** ****************/
 
 
 
