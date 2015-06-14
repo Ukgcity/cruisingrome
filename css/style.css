@@ -58,7 +58,17 @@ figure { width:100%; margin:0; }
    /*label_for_price*/
 .imgHolder { position:relative;  border: 5px solid white; }
 .imgHolder img { width:100%; margin:0 !important; }
-.imgHolder span { position:absolute; top:0; left:0; width:86px; text-align:left; padding-left:5px; font-weight:300; font-size:18px; }
+.imgHolder span { 
+	position:absolute; 
+	top:0; 
+	left:0; 
+	width:86px; 
+	text-align:left; 
+	padding-left:5px; 
+	font-weight:300; 
+	font-size:18px; 
+	color:white;
+}
 .imgHolder span:before {
 	content:""; /*must be declared on a pseudo element*/
 	position:absolute; /*allows positioning using left right top and bottom properties*/
@@ -425,11 +435,37 @@ span.text_comment { font-size:12px; color:#8e001c; }
 	border-bottom:14px solid #8e001c; /*half the height*/
 }
 .section-top-for { background-color:#f3f3f3; }
-
-
+.section-top-for a.th { line-height:inherit; }
+.about_us_clock { background: url('../img/about_us_clock.png') left center no-repeat; }
+.about_us_check { background: url('../img/about_us_check.png') left center no-repeat; }
 /*******************************ABOUT US*************** ****************/
 
+/*******************************LUGGAGE*************** ****************/
+.luggage-bg {
+	background-image: url('../img/luggage_bg.jpg');
+	display: block;                                                                    
+	max-width: 100%;
+	padding-top: 575px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+.luggage-bg h1 { 
+	z-index:2;
+	position: absolute;
+	width: 63%;
+	top: 250px;
+	color: white;
+	font-size: 68px;
+	font-family: 'Source Sans Pro';
+	font-weight:700;
+	text-align:center;
+	left:20%;
+	line-height: 1.21;
+}
 
+/*******************************LUGGAGE*************** ****************/
 
 
 /*******************************MEDIA QUERY*******************************/
