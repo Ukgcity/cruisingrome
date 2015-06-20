@@ -134,7 +134,7 @@ span.header-text { font-weight:700; font-size:18px; color:#333333; }
 .comboimg img { width:245px; height:150px; }
    /*comboimg*/
 /*GENERAL CLASSES*/
-                                           
+
 /*NAVIGATION MENU*/
 #navigation { float: left; height:auto; width:auto; display: inline; } 
 #navigation li { float: left; position: relative; /*New*/ height:100%; }
@@ -330,24 +330,24 @@ span.text-comment { font-size:12px; color:#8e001c; }
 
 /*---------------------------------------------EXCURSION----------------------------------------------------------*/
 .breadcrumb { color:#f2f1ef; max-width:100%; padding-top:65px; min-height:51px; }
-.excursion_img  { width:100%; min-height:397px; margin:0 0 30px 0 !important; }
+.excursion-img  { width:100%; min-height:397px; margin:0 0 30px 0 !important; }
 /*SIDEBAR*/
 /*FEATURES*/
-.features_bg { background-color:#f2f1ef; box-shadow:0 4px 0 0 rgba(142, 142, 142, 0.2); margin-bottom:30px; }
-.features_text { color:#333333; font-weight:700; }
+.features-bg { background-color:#f2f1ef; box-shadow:0 4px 0 0 rgba(142, 142, 142, 0.2); margin-bottom:30px; }
+.features-text { color:#333333; font-weight:700; }
 .features-list-main { list-style: none; margin: 0; padding: 0; display: inline-block; width: 90%; }
-.features_span { text-decoration: underline; color: #8e001c; font-size: 16px; }
-.features_train { background: url('../img/excursion_train.png') left center no-repeat; }
-.features_minivan { background: url('../img/excursion_minivan.png') left center no-repeat; }
-.features_bus { background: url('../img/excursion_bus.png') left center no-repeat; }
-.features_walk_tour { background: url('../img/excursion_walking.png') left center no-repeat; }
-.features_cuisine_tour { background: url('../img/excursion_cuisine.png') left center no-repeat; }
-.features_shopping_tour { background: url('../img/excursion_shopping.png') left center no-repeat; }
+.features-span { text-decoration: underline; color: #8e001c; font-size: 16px; }
+.features-train { background: url('../img/excursion_train.png') left center no-repeat; }
+.features-minivan { background: url('../img/excursion_minivan.png') left center no-repeat; }
+.features-bus { background: url('../img/excursion_bus.png') left center no-repeat; }
+.features-walk-tour { background: url('../img/excursion_walking.png') left center no-repeat; }
+.features-cuisine-tour { background: url('../img/excursion_cuisine.png') left center no-repeat; }
+.features-shopping-tour { background: url('../img/excursion_shopping.png') left center no-repeat; }
 /*FEATURES*/
 /*TAB*/
 .excursion-tab { box-shadow:0 4px 0 0 rgba(142, 142, 142, 0.2); border:2px solid grey; }
 .top-shore-exursion-text { color:#8e001c; font-size:28px; font-weight:700; }
-.excursion_h2 { color:#565656; font-size:22px; text-align:left; }
+.excursion-h2 { color:#565656; font-size:22px; text-align:left; }
 .service-container { 
 	position:relative; 
 	padding-left:0; 
@@ -358,14 +358,13 @@ span.text-comment { font-size:12px; color:#8e001c; }
 	text-align:left;
 }
 /*TAB*/
-
 /*TOP SHORE EXURSION*/
 .service-container a { font-weight:400; color:#565656; font-size:16px; }
 .rating img { margin:0; }
 .service-container .features-list-main div { padding:0; }
 .service-container .features-list-main span { text-decoration:none; color:#565656; }
-.features_glyphicons { background: url('../img/excursion_glyphicons.png') left center no-repeat; }
-.features_glyphicons2 { background: url('../img/excursion_glyphicons2.png') left center no-repeat; }
+.features-glyphicons { background: url('../img/excursion_glyphicons.png') left center no-repeat; }
+.features-glyphicons2 { background: url('../img/excursion_glyphicons2.png') left center no-repeat; }
 /*TOP SHORE EXURSION*/
 /*SIDEBAR*/
 
