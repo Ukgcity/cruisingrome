@@ -23,7 +23,7 @@
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation/foundation.js"></script>
-    <script src="js/foundation/foundation.orbit.js"></script>
+    <script src="js/foundation/foundation.tab.js"></script>
 </head>
 
 <style type="text/css">
@@ -129,53 +129,76 @@
                <!-- SLIDER -->
       
                <!-- TAB -->
-               <section class="excursion-tab">
-                  <div class="row centered-text spacer-padding-bottom-text">
-                     <div class="large-12 columns centered-text">
-                        <ul class="tabs" data-tab role="tablist">
-                            <li class="tab-title active" role="presentational" >
-                                <a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Tab 1</a>
-                            </li>
-                            <li class="tab-title" role="presentational" >
-                                <a href="#panel2-2" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Tab 2</a>
-                            </li>
-                            <li class="tab-title" role="presentational">
-                                <a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Tab 3</a>
-                            </li>
-                            <li class="tab-title" role="presentational" >
-                                <a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" controls="panel2-4">Tab 4</a>
-                            </li>
-                        </ul>
-                        <div class="tabs-content">
-                           <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
-                              <h2>First panel content goes here...</h2>
-                           </section>
-                           <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
-                              <h2>Second panel content goes here...</h2>
-                           </section>
-                           <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
-                              <h2>Third panel content goes here...</h2>
-                           </section>
-                           <section role="tabpanel" aria-hidden="true" class="content" id="panel2-4">
-                              <h2>Fourth panel content goes here...</h2>
-                           </section>
+               <div class="row centered-text">
+                  <div class="large-12 columns centered-text">
+                     <div class="tab-section" data-section="tabs">
+                        <div class="service-tab">
+                           <dl class="tabs" data-tab>
+                              <dd class="tab-title active">
+                                 <a href="#panel1">About Rome</a>
+                              </dd>
+                              <dd class="tab-title">
+                                 <a href="#panel2">Choose the best Transportation</a>
+                              </dd>
+                              <dd class="tab-title">
+                                 <a href="#panel3">What we Guarantee</a>
+                              </dd>
+                           </dl>
+
+                           <div class="tabs-content">
+                              <div class="content active" id="panel1">
+                                 <p class="p-general">
+                                   It is easy to see why Rome is called the Eternal City: you can see remnants of the past 
+                                   all over the ancient Italian capital. Ruins of the Roman Empire like the Roman Forum and 
+                                   Colosseum make it one of the great historic places to visit and draw millions of visitors 
+                                   every year. Rome is also home to the Vatican City, a tiny city-within-a-city serving as 
+                                   the earthly headquarters of the Catholic Church and residence of the Pope. Here, you can 
+                                   get a travel guide to check out the spectacular Vatican Museum, St. Peter’s Basilica, and 
+                                   the Sistine Chapel, home to Michelangelo's priceless fresco, The Creation of Adam. In Rome 
+                                   itself, take a walk up the Palatine Hill, the historic site of the Spanish Steps, or take 
+                                   a sip from one of the ancient fountains dotting the city’s many piazzas. Of course, 
+                                   there’s also the world-famous italian cuisine: pizza, pasta, wine, espresso, gelato... 
+                                   what more do you need?.
+                                 </p>
+                              </div>
+                              <div class="content" id="panel2">
+                                 <p class="p-general">
+                                   Rome is also home to the Vatican City, a tiny city-within-a-city serving as 
+                                   the earthly headquarters of the Catholic Church and residence of the Pope. Here, you can 
+                                   get a travel guide to check out the spectacular Vatican Museum, St. Peter’s Basilica, and 
+                                   the Sistine Chapel, home to Michelangelo's priceless fresco, The Creation of Adam. In Rome 
+                                   itself, take a walk up the Palatine Hill, the historic site of the Spanish Steps, or take 
+                                   a sip from one of the ancient fountains dotting the city’s many piazzas. Of course, 
+                                   there’s also the world-famous italian cuisine: pizza, pasta, wine, espresso, gelato... 
+                                   what more do you need?.
+                                 </p>
+                              </div>
+                              <div class="content" id="panel3">
+                                 <p class="p-general">
+                                   In Rome itself, take a walk up the Palatine Hill, the historic site of the Spanish Steps, 
+                                   or take a sip from one of the ancient fountains dotting the city’s many piazzas. Of course, 
+                                   there’s also the world-famous italian cuisine: pizza, pasta, wine, espresso, gelato... 
+                                   what more do you need?.
+                                 </p>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
-               </section>
+               </div>
                <!-- TAB -->
 
                <!---TOP SHORE EXURSION-->
                <section class="top-shore-exursion">
                   <div class="row centered-text spacer-for-h2">
                      <div class="large-12 columns centered-text">
-                        <h2 class="top-shore-exursion-text">Top Shore Excursion By Luxury Bus</h2>
-                        <hr width="100px" align="center">
+                        <h2 class="header-h2">Top Shore Excursion By Luxury Bus</h2>
+                        <hr width="100px" align="center" class="hr-red">
                      </div>
                   </div>
 
                   <!--- EXURSION ONE-->
-                  <div class="row centered-text spacer-for-h2">
+                  <div class="row centered-text">
                      <div class="medium-3 large-3 columns supporticons"> 
                         <img src="img/excursion_romebus.jpg">
                      </div>
@@ -184,7 +207,7 @@
                         <div class="row centered-text">
                            <div class="row">
                               <div class="medium-10 large-10 columns supporticons">                        
-                                 <h2 class="excursion-h2">
+                                 <h2 class="h2-for-title">
                                      Civitavecchia Shore excursion: Rome on your own full day tour By Bus
                                  </h2>
                                  <div class="service-container">
@@ -206,14 +229,16 @@
                                  <div>
                                     <a href="#">
                                        <li class="features-list-item">
-                                           <span class="features-span features-glyphicons">Duration: 8 hours</span>
+                                           <span class="features-span features-span-grey features-glyphicons">
+                                               Duration: 8 hours
+                                           </span>
                                        </li>
                                     </a>
                                  </div>
                                  <div>  
                                     <a href="#">
                                        <li class="features-list-item">
-                                           <span class="features-span features-glyphicons2">
+                                           <span class="features-span features-span-grey features-glyphicons2">
                                               Languages: English, Italian, French, Dansk
                                            </span>
                                        </li>
@@ -222,15 +247,16 @@
                               </div>
                               <div class="medium-2 large-2 columns supporticons">  
                                  <div>
-                                    <span style="color:black;">from</span>
+                                    <span class="span-price-text">from</span>
                                  </div>
                                  <div>
-                                    <span style="color:black;">17&euro;</span>
+                                    <span class="span-price-num">17&euro;</span>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
+                  <hr class="hr-grey">
                   </div>
                   <!--- EXURSION ONE-->
                   <!--- EXURSION TWO-->
@@ -243,7 +269,7 @@
                         <div class="row centered-text">
                            <div class="row">
                               <div class="medium-10 large-10 columns supporticons">                        
-                                 <h2 class="excursion-h2">Civitavecchia:Panoramic full day Tour of Rome By Bus</h2>
+                                 <h2 class="h2-for-title">Civitavecchia:Panoramic full day Tour of Rome By Bus</h2>
                                  <div class="service-container">
                                     <span class="rating">
                                        <img src="img/excursion_stars.png">
@@ -263,14 +289,16 @@
                                  <div>
                                     <a href="#">
                                        <li class="features-list-item">
-                                           <span class="features-span features-glyphicons">Duration: 8 hours</span>
+                                           <span class="features-span features-span-grey features-glyphicons">
+                                              Duration: 8 hours
+                                           </span>
                                        </li>
                                     </a>
                                  </div>
                                  <div>  
                                     <a href="#">
                                        <li class="features-list-item">
-                                           <span class="features-span features-glyphicons2">
+                                           <span class="features-span features-span-grey features-glyphicons2">
                                               Languages: English, Italian, French, Dansk
                                            </span>
                                        </li>
@@ -279,15 +307,16 @@
                               </div>
                               <div class="medium-2 large-2 columns supporticons">  
                                  <div>
-                                    <span style="color:black;">from</span>
+                                    <span class="span-price-text">from</span>
                                  </div>
                                  <div>
-                                    <span style="color:black;">55&euro;</span>
+                                    <span class="span-price-num">55&euro;</span>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
+                  <hr class="hr-grey">
                   </div>
                   <!--- EXURSION TWO-->
                   <!--- EXURSION THREE-->
@@ -300,7 +329,7 @@
                         <div class="row centered-text">
                            <div class="row">
                               <div class="medium-10 large-10 columns supporticons">                        
-                                 <h2 class="excursion-h2">
+                                 <h2 class="h2-for-title">
                                      No Waiting! Civitavecchia Shore Excursion : Rome, Vatican Museum, and St. Peter’sBy Bus
                                  </h2>
                                  <div class="service-container">
@@ -322,14 +351,16 @@
                                  <div>
                                     <a href="#">
                                        <li class="features-list-item">
-                                           <span class="features-span features-glyphicons">Duration: 8 hours</span>
+                                           <span class="features-span features-span-grey features-glyphicons">
+                                              Duration: 8 hours
+                                           </span>
                                        </li>
                                     </a>
                                  </div>
                                  <div>  
                                     <a href="#">
                                        <li class="features-list-item">
-                                           <span class="features-span features-glyphicons2">
+                                           <span class="features-span features-span-grey features-glyphicons2">
                                               Languages: English, Italian, French, Dansk
                                            </span>
                                        </li>
@@ -338,25 +369,361 @@
                               </div>
                               <div class="medium-2 large-2 columns supporticons">  
                                  <div>
-                                    <span style="color:black;">from</span>
+                                    <span class="span-price-text">from</span>
                                  </div>
                                  <div>
-                                    <span style="color:black;">45&euro;</span>
+                                    <span class="span-price-num">45&euro;</span>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
+                  <hr class="hr-grey">
                   </div>
                   <!--- EXURSION THREE-->
                </section>
                <!---TOP SHORE EXURSION-->
+
+               <!---TOP MINIVAN PRIVATE-->
+               <section class="top-shore-exursion">
+                  <div class="row centered-text spacer-for-h2">
+                     <div class="large-12 columns centered-text">
+                        <h2 class="header-h2">Top Minivan Private or Shared shore excursions</h2>
+                        <hr width="100px" align="center" class="hr-red">
+                     </div>
+                  </div>
+
+                  <!--- EXURSION ONE-->
+                  <div class="row centered-text">
+                     <div class="medium-3 large-3 columns supporticons"> 
+                        <img src="img/excursion_romebus.jpg">
+                     </div>
+
+                     <div class="medium-9 large-9 columns supporticons">                        
+                        <div class="row centered-text">
+                           <div class="row">
+                              <div class="medium-10 large-10 columns supporticons">                        
+                                 <h2 class="h2-for-title">
+                                     Civitavecchia shore excursion:Rome Highlight's Private and Shared full day tour By Minivan
+                                 </h2>
+                                 <div class="service-container">
+                                    <span class="rating">
+                                       <img src="img/excursion_stars.png">
+                                    </span>
+                                    <a href="#">
+                                       (<span>23</span> Reviews)
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="medium-2 large-2 columns supporticons">    
+                                 <img src="img/excursion_love.png">
+                              </div>
+                           </div>
+
+                           <div class="row">
+                              <div class="medium-10 large-10 columns supporticons">
+                                 <div>
+                                    <a href="#">
+                                       <li class="features-list-item">
+                                           <span class="features-span features-span-grey features-glyphicons">
+                                               Duration: 8 hours
+                                           </span>
+                                       </li>
+                                    </a>
+                                 </div>
+                                 <div>  
+                                    <a href="#">
+                                       <li class="features-list-item">
+                                           <span class="features-span features-span-grey features-glyphicons2">
+                                              Languages: English, Italian, French, Dansk
+                                           </span>
+                                       </li>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="medium-2 large-2 columns supporticons">  
+                                 <div>
+                                    <span class="span-price-text">from</span>
+                                 </div>
+                                 <div>
+                                    <span class="span-price-num">55&euro;</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  <hr class="hr-grey">
+                  </div>
+                  <!--- EXURSION ONE-->
+                  <!--- EXURSION TWO-->
+                  <div class="row centered-text spacer-for-h2">
+                     <div class="medium-3 large-3 columns supporticons"> 
+                        <img src="img/excursion_romeonyourown.jpg">
+                     </div>
+
+                     <div class="medium-9 large-9 columns supporticons">                        
+                        <div class="row centered-text">
+                           <div class="row">
+                              <div class="medium-10 large-10 columns supporticons">                        
+                                 <h2 class="h2-for-title">
+                                    Civitavecchia Shore Excursion:Rome and Countryside full day Private tour By Minivan
+                                 </h2>
+                                 <div class="service-container">
+                                    <span class="rating">
+                                       <img src="img/excursion_stars.png">
+                                    </span>
+                                    <a href="#">
+                                       (<span>23</span> Reviews)
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="medium-2 large-2 columns supporticons">    
+                                 <img src="img/excursion_love.png">
+                              </div>
+                           </div>
+
+                           <div class="row">
+                              <div class="medium-10 large-10 columns supporticons">
+                                 <div>
+                                    <a href="#">
+                                       <li class="features-list-item">
+                                           <span class="features-span features-span-grey features-glyphicons">
+                                              Duration: 8 hours
+                                           </span>
+                                       </li>
+                                    </a>
+                                 </div>
+                                 <div>  
+                                    <a href="#">
+                                       <li class="features-list-item">
+                                           <span class="features-span features-span-grey features-glyphicons2">
+                                              Languages: English, Italian, French, Dansk
+                                           </span>
+                                       </li>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="medium-2 large-2 columns supporticons">  
+                                 <div>
+                                    <span class="span-price-text">from</span>
+                                 </div>
+                                 <div>
+                                    <span class="span-price-num">55&euro;</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  <hr class="hr-grey">
+                  </div>
+                  <!--- EXURSION TWO-->
+                  <!--- EXURSION THREE-->
+                  <div class="row centered-text spacer-for-h2">
+                     <div class="medium-3 large-3 columns supporticons"> 
+                        <img src="img/excursion_romebus.jpg">
+                     </div>
+
+                     <div class="medium-9 large-9 columns supporticons">                        
+                        <div class="row centered-text">
+                           <div class="row">
+                              <div class="medium-10 large-10 columns supporticons">                        
+                                 <h2 class="h2-for-title">
+                                    No Waiting Civitavecchia shore excursion:Rome Vatican and St.Peter's Basilica skip the line 
+                                    tourBy Minivan                                 
+                                 </h2>
+                                 <div class="service-container">
+                                    <span class="rating">
+                                       <img src="img/excursion_stars.png">
+                                    </span>
+                                    <a href="#">
+                                       (<span>23</span> Reviews)
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="medium-2 large-2 columns supporticons">    
+                                 <img src="img/excursion_love.png">
+                              </div>
+                           </div>
+
+                           <div class="row">
+                              <div class="medium-10 large-10 columns supporticons">
+                                 <div>
+                                    <a href="#">
+                                       <li class="features-list-item">
+                                           <span class="features-span features-span-grey features-glyphicons">
+                                              Duration: 8 hours
+                                           </span>
+                                       </li>
+                                    </a>
+                                 </div>
+                                 <div>  
+                                    <a href="#">
+                                       <li class="features-list-item">
+                                           <span class="features-span features-span-grey features-glyphicons2">
+                                              Languages: English, Italian, French, Dansk
+                                           </span>
+                                       </li>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="medium-2 large-2 columns supporticons">  
+                                 <div>
+                                    <span class="span-price-text">from</span>
+                                 </div>
+                                 <div>
+                                    <span class="span-price-num">55&euro;</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  <hr class="hr-grey">
+                  </div>
+                  <!--- EXURSION THREE-->
+               </section>
+               <!---TOP MINIVAN PRIVATE-->
+               <!---BEST SELLER TRAIN TICKET PACKAGES-->
+               <section class="top-shore-exursion">
+                  <div class="row centered-text spacer-for-h2">
+                     <div class="large-12 columns centered-text">
+                        <h2 class="header-h2">Best seller Train Ticket Packages</h2>
+                        <hr width="100px" align="center" class="hr-red">
+                     </div>
+                  </div>
+
+                  <!--- EXURSION ONE-->
+                  <div class="row centered-text">
+                     <div class="medium-3 large-3 columns supporticons"> 
+                        <img src="img/excursion_romebus.jpg">
+                     </div>
+
+                     <div class="medium-9 large-9 columns supporticons">                        
+                        <div class="row centered-text">
+                           <div class="row">
+                              <div class="medium-10 large-10 columns supporticons">                        
+                                 <h2 class="h2-for-title">
+                                    Civitavecchia Train Package:BIRGE ticket including Skip The Line tickets at The Vatican 
+                                    Museum By Train 
+                                 </h2>
+                                 <div class="service-container">
+                                    <span class="rating">
+                                       <img src="img/excursion_stars.png">
+                                    </span>
+                                    <a href="#">
+                                       (<span>23</span> Reviews)
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="medium-2 large-2 columns supporticons">    
+                                 <img src="img/excursion_love.png">
+                              </div>
+                           </div>
+
+                           <div class="row">
+                              <div class="medium-10 large-10 columns supporticons">
+                                 <div>
+                                    <a href="#">
+                                       <li class="features-list-item">
+                                           <span class="features-span features-span-grey features-glyphicons">
+                                               Duration: 8 hours
+                                           </span>
+                                       </li>
+                                    </a>
+                                 </div>
+                                 <div>  
+                                    <a href="#">
+                                       <li class="features-list-item">
+                                           <span class="features-span features-span-grey features-glyphicons2">
+                                              Languages: English, Italian, French, Dansk
+                                           </span>
+                                       </li>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="medium-2 large-2 columns supporticons">  
+                                 <div>
+                                    <span class="span-price-text">from</span>
+                                 </div>
+                                 <div>
+                                    <span class="span-price-num">43&euro;</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  <hr class="hr-grey">
+                  </div>
+                  <!--- EXURSION ONE-->
+                  <!--- EXURSION TWO-->
+                  <div class="row centered-text spacer-for-h2">
+                     <div class="medium-3 large-3 columns supporticons"> 
+                        <img src="img/excursion_romeonyourown.jpg">
+                     </div>
+
+                     <div class="medium-9 large-9 columns supporticons">                        
+                        <div class="row centered-text">
+                           <div class="row">
+                              <div class="medium-10 large-10 columns supporticons">                        
+                                 <h2 class="h2-for-title">
+                                     Civitavecchia Train Package:BIRGE ticket including City sightseeing Open Bus Tour By Train
+                                 </h2>
+                                 <div class="service-container">
+                                    <span class="rating">
+                                       <img src="img/excursion_stars.png">
+                                    </span>
+                                    <a href="#">
+                                       (<span>23</span> Reviews)
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="medium-2 large-2 columns supporticons">    
+                                 <img src="img/excursion_love.png">
+                              </div>
+                           </div>
+
+                           <div class="row">
+                              <div class="medium-10 large-10 columns supporticons">
+                                 <div>
+                                    <a href="#">
+                                       <li class="features-list-item">
+                                           <span class="features-span features-span-grey features-glyphicons">
+                                              Duration: 8 hours
+                                           </span>
+                                       </li>
+                                    </a>
+                                 </div>
+                                 <div>  
+                                    <a href="#">
+                                       <li class="features-list-item">
+                                           <span class="features-span features-span-grey features-glyphicons2">
+                                              Languages: English, Italian, French, Dansk
+                                           </span>
+                                       </li>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="medium-2 large-2 columns supporticons">  
+                                 <div>
+                                    <span class="span-price-text">from</span>
+                                 </div>
+                                 <div>
+                                    <span class="span-price-num">32&euro;</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  <hr class="hr-grey">
+                  </div>
+                  <!--- EXURSION TWO-->
+               </section>
+               <!---BEST SELLER TRAIN TICKET PACKAGES-->
             </div>
 
             <!-- SIDEBAR -->
             <div class="medium-4 large-4 columns supporticons">
                <!--FEATURES-->
-               <section class="features-bg">
+               <section class="features sidebar-bg">
                   <div class="row centered-text">
                      <p class="features-text">Get the Most out of Rome</p>
                         <div class="large-12 columns centered-text" style="display:block;">
@@ -364,42 +731,42 @@
                                <div class="large-12 columns centered-text">
                                   <a href="#">
                                      <li class="features-list-item">
-                                         <span class="features-span features-train">Train</span>
+                                         <span class="features-span features-span-red features-train">Train</span>
                                      </li>
                                   </a>
                                </div>
                                <div class="large-12 columns centered-text">
                                   <a href="#">
                                      <li class="features-list-item">
-                                         <span class="features-span features-minivan">Minivan</span>
+                                         <span class="features-span features-span-red features-minivan">Minivan</span>
                                      </li>
                                   </a>
                                </div>
                                <div class="large-12 columns centered-text">
                                   <a href="#">
                                      <li class="features-list-item">
-                                         <span class="features-span features-bus">Bus</span>
+                                         <span class="features-span features-span-red features-bus">Bus</span>
                                      </li>
                                   </a>
                                </div>
                                <div class="large-12 columns centered-text">
                                   <a href="#">
                                      <li class="features-list-item">
-                                         <span class="features-span features-walk-tour">Walking Tours</span>
+                                         <span class="features-span features-span-red features-walk-tour">Walking Tours</span>
                                      </li>
                                   </a>
                                </div>
                                <div class="large-12 columns centered-text">
                                   <a href="#">
                                      <li class="features-list-item">
-                                         <span class="features-span features-cuisine-tour">Cuisine Tours</span>
+                                         <span class="features-span features-span-red features-cuisine-tour">Cuisine Tours</span>
                                      </li>
                                   </a>
                                </div>
                                <div class="large-12 columns centered-text">
                                   <a href="#">
                                      <li class="features-list-item">
-                                         <span class="features-span features-shopping-tour">Shopping Tours</span>
+                                         <span class="features-span features-span-red features-shopping-tour">Shopping Tours</span>
                                      </li>
                                   </a>
                                </div>
@@ -409,7 +776,7 @@
                </section>
                <!--FEATURES-->
                <!--SIMILAR-->  
-               <section class="similar-bg">
+               <section class="similar sidebar-bg">
                   <h2>Surrounding and Other Shore Destinations</h2>
                      <div class="row centered-text spacer-padding-bottom-text">
                         <ul>
@@ -537,6 +904,9 @@
    </div>
    <!-- / PAGE WRAP -->
 
+<script>
+  $(document).foundation();
+</script>
 </body>
 
 </html>
