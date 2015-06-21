@@ -140,6 +140,7 @@ span.header-text { font-weight:700; font-size:18px; color:#333333; }
 .img-bg { box-shadow: 0 4px 0 0 rgba(142, 142, 142, 0.2); background:white; border:solid 5px #FFFFFF; }
 .comboimg img { width:245px; height:150px; }
    /*comboimg*/
+ul.disc { color:#565656; text-align:left; }
 /*GENERAL CLASSES*/
 
 /*NAVIGATION MENU*/
@@ -425,8 +426,23 @@ span.text-comment { font-size:12px; color:#8e001c; }
 .luggage-group { background: url('../img/luggage_delivery_group.png') left center no-repeat; }
 .luggage-compass { background: url('../img/luggage_delivery_compass.png') left center no-repeat; }
 .luggage-wallet { background: url('../img/luggage_delivery_wallet.png') left center no-repeat; }
-.luggage-old_man { background: url('../img/luggage_delivery_old_man.png') left center no-repeat; }
+.luggage-old-man { background: url('../img/luggage_delivery_old_man.png') left center no-repeat; }
 /*-----------------------------------------LUGGAGE DELIVERY-----------------------------------------------------*/
+/*---------------------------------------------SERVICE*LIST-----------------------------------------------------*/
+.service-category { background: url('../img/service_list_category.png') left center no-repeat; }
+.service-time { background: url('../img/service_list_time.png') left center no-repeat; }
+.service-person { background: url('../img/service_list_person.png') left center no-repeat; }
+.service-bus { background: url('../img/service_list_bus.png') left center no-repeat; }
+.service-language { background: url('../img/service_list_language.png') left center no-repeat; }
+.service-quide { background: url('../img/service_list_quide.png') left center no-repeat; }
+.pricing-table { margin:0 auto; border:none; }
+.pricing-table .price, .pricing-table .cta-button { background-color:inherit; }
+.service-btn-bg { 
+	background: url('../img/service_list_luggage.png') 80px 12px no-repeat; 
+	background-color:#8e001c; 
+	padding:1rem 7rem 1.0625rem 7rem;
+}
+/*---------------------------------------------SERVICE*LIST-----------------------------------------------------*/
 /*table*/
 table { background:#f8f8f8; border: none; box-shadow: 0 4px 0 0 rgba(230, 230, 230, 0.5); }
 table thead { background:#f2f1ef; box-shadow: 0 4px 0 0 rgba(230, 230, 230, 0.5); }
