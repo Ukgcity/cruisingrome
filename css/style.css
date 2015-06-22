@@ -19,7 +19,8 @@ body {
 	color:white;
 } 
 body, p { font-size: 24px; font-family: 'Source Sans Pro', sans-serif; }
-p { color: #565656; margin:0; } 	 
+p { color: #565656; margin:0; font-weight:400; font-size:16px; text-align:left; } 	 
+span { font-weight:400; color:#565656; font-size:18px; }
 a { color: #333333; text-decoration: none; outline: none; cursor: pointer; } 
 a:hover { color: #666666; }
 ol, ul, li { list-style: none; }
@@ -64,8 +65,8 @@ figure { width:100%; margin:0; }
 .hr-red { border-color:#8e001c; }
 .hr-grey { border:1px solid #eaeaea; }
 .p-for-column { font-size:18px; font-weight:300; text-align:left; }
-.p-general { font-weight:400; font-size:16px; text-align:left; }
 .h2-for-title { font-size:22px; text-align:left; color:#565656; }
+.span-red { color: #8e001c; font-size: 16px; }
    /*bg img*/
 .bgimg { 
 	display: block;                                                                    
@@ -120,7 +121,6 @@ figure { width:100%; margin:0; }
    /*label_for_price*/
    /*text_for_figure_square*/
 span.header-text { font-weight:700; font-size:18px; color:#333333; }
-
 .features-list-item { display:table; width: 100%; padding-top: 7px; padding-bottom: 5px; margin: 0; cursor: pointer; }
 .features-list-main { margin: 0; padding: 0; display: inline-block; width: 90%; }
 .features-span { 
@@ -268,7 +268,7 @@ ul.disc { color:#565656; text-align:left; }
 .general-bgimg .overlay { background-color: black; }
 /*BACKGROUND IMAGE*/
 /*SECTION PROMO*/
-.promo span { font-weight:400; color:#565656; font-size:18px; display:block; padding-left:57px; text-align:left; }
+.promo span { display:block; padding-left:57px; text-align:left; }
 .promo span.general-title { font-weight: 700; font-size: 24px; padding:0; line-height:60px; }
 .promo span.title { font-weight: 700; }
 .property-promo { display:block; margin:11px 0 0 0; min-height:40px; height:100%; }
@@ -343,7 +343,7 @@ span.text-comment { font-size:12px; color:#8e001c; }
 /*SIDEBAR*/
 /*FEATURES*/
 .features-text { color:#333333; font-weight:700; }
-.features-span-red { text-decoration: underline; color: #8e001c; font-size: 16px; }
+.features-span-red { text-decoration: underline; } 
 .features-train { background: url('../img/excursion_train.png') left center no-repeat; }
 .features-minivan { background: url('../img/excursion_minivan.png') left center no-repeat; }
 .features-bus { background: url('../img/excursion_bus.png') left center no-repeat; }
@@ -444,10 +444,16 @@ span.text-comment { font-size:12px; color:#8e001c; }
 }
 /*---------------------------------------------SERVICE*LIST-----------------------------------------------------*/
 /*table*/
-table { background:#f8f8f8; border: none; box-shadow: 0 4px 0 0 rgba(230, 230, 230, 0.5); }
+table { border: none; box-shadow: 0 4px 0 0 rgba(230, 230, 230, 0.5); }
 table thead { background:#f2f1ef; box-shadow: 0 4px 0 0 rgba(230, 230, 230, 0.5); }
 table thead tr th { color:#333333; font-weight:700; font-size:17px; }
-table tr td { }
+table.table-pricing th { background-color: #f2f1ef; text-align:center; }
+table.table-pricing tr:nth-child(even) { background-color:#f2f1ef; }
+table.table-pricing tr:nth-child(odd) { background-color:#f8f8f8; }
+table tr td { text-align:center; }
+.note td:last-child { text-align:left; }
+.note span.span-red { font-weight:700; }
+.note p { font-weight:200; text-decoration:underline; }
 /*table*/
 
 i.icon { display: inline-block;
