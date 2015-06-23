@@ -319,11 +319,13 @@ ul.disc { color:#565656; text-align:left; }
 }
 .left-column p { padding:11px 0 2px 15px; }
 .left-column a { color:#8e001c; }
-#pointer { border:solid 10px transparent; border-right-color:#fff; position:absolute; margin:-126px 0 0 -20px; }
+#pointer { border:solid 10px transparent; border-right-color:#fff; position:absolute; margin:-105px 0 0 -20px; }
 .right-column { background-color: #ffb300; }
 .right-column.supporticons img { margin: 0 0 0 55px; }
 .right-column p { font-size:18px; text-align:left; font-weight:400; color:#f2f2f2; margin: 0px 85px 40px 55px; }
 .customer-reviews .right-column hr { margin-left:55px; }
+.orbit-container .orbit-slide-number, .orbit-container .orbit-timer,
+.orbit-container .orbit-prev, .orbit-container .orbit-next { display:none; }
 .orbit-bullets li { background:#ffffff; }
 .orbit-bullets li.active { background:#8e001c; }
 /*CUSTOMER REVIEWS*/
