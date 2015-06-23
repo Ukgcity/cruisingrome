@@ -27,6 +27,7 @@ ol, ul, li { list-style: none; }
 h2 { font-family: 'Source Sans Pro', sans-serif; font-size:32px; font-weight:700; color:#333333; margin:0; }
 h3 { font-family: 'Source Sans Pro', sans-serif; font-size:18px; font-weight:700; color:#333333; }
 hr { margin:auto; border-color:#777777; }
+fieldset { border:none; }
 .button { 
 	background-color:#8e001c; 
 	font-family: 'Source Sans Pro',sans-serif; 
@@ -455,50 +456,18 @@ table tr td { text-align:center; }
 .note span.span-red { font-weight:700; }
 .note p { font-weight:200; text-decoration:underline; }
 /*table*/
-
-i.icon { display: inline-block;
-	width: 32px;
-	height: 32px;
-	background: #ebebeb;
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	margin-top: -16px;
-}
-i.icon::before {
-	content: "";
-	display: block;
-	background: #c2c2c2;
-	width: 10px;
-	height: 10px;
-	border-radius: 1000px;
-	position: absolute;
-	left: 50%;
-	margin-left: -5px;
-	top: 5px;
-}
-i.icon::after {
-	content: "";
-	display: block;
-	background: #c2c2c2;
-	width: 20px;
-	height: 10px;
-	border-radius: 1000px 1000px 0 0;
-	display: block;
-	position: absolute;
-	left: 50%;
-	margin-left: -10px;
-	top: 15px;
-}
-
-h6.byline { padding-left: 40px; position: relative; margin-bottom: 15px; margin-top: 10px; }
-h6.byline .data { font-weight: 400; }
+/*reviews*/
+.reviews h3 { text-align:left; }
+.comment { text-align:left; padding:15px 0; }
+h6.byline { position: relative; margin:0;/*margin-bottom: 15px; margin-top:10px;*/ }
 h6.byline .label { font-size: 60%; }
-.indented.comment { padding-left: 15px; border-left: 1px solid #ebebeb; }
+.byline a { font-size:16px; font-weight:700; }
+.byline time { color:#999999; font-weight:400; font-size:12px; font-family:'Source Sans Pro', sans-serif; }
+.indented.comment { padding-left: 15px; border-left:1px solid #ebebeb; }
 .push { margin-bottom: 40px; }
+.top .content  p{ font-size:14px; }
 .bullets { margin-left: 30px; }
-
+/*reviews*/
 /*FOOTER*/
 .footer-top { background:#8e001c; }
 .footer-top-container { padding-top:60px; text-align:left; }
