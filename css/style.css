@@ -52,6 +52,15 @@ figure { width:100%; margin:0; }
 .top-bar img { margin-left:11%; display:inline-block; vertical-align:middle; }
 
 /*GENERAL CLASSES*/
+/*sprites*/
+.lan-en,.lan-es,.lan-pt-br,.lan-de,.lan-it,.finest-selection,.port-assistant,.save-money { 
+	display: inline-block;
+	background: url("../img/sprite-general.png") no-repeat;
+	/*overflow: hidden; 
+	text-indent: -9999px;*/
+	text-align: left; 
+}
+/*sprites*/
 .bg-white { background-color:#f8f8f8; }
 .bg-grey  { background-color:#f3f3f3; }
    /*spacers for row*/
@@ -239,11 +248,11 @@ ul.disc { color:#565656; text-align:left; }
 	border-top: 4px solid #232f49;
 	pointer-events: none;
 }
-.lan-en { background-image: url('../img/gb.png'); background-repeat: no-repeat; }
-.lan-es { background-image: url('../img/es.png'); background-repeat: no-repeat; }
-.lan-pt-br { background-image: url('../img/pt.png'); background-repeat: no-repeat; }
-.lan-de { background-image: url('../img/de.png'); background-repeat: no-repeat; }
-.lan-it { background-image: url('../img/it.png'); background-repeat: no-repeat; }
+.lan-en { background-position: -1px -148px; }
+.lan-es { background-position: -1px -173px; }
+.lan-pt-br { background-position: -1px -223px; }
+.lan-de { background-position: -1px -123px; }
+.lan-it { background-position: -1px -198px; }
 .lan-list {
 	display: none;
 	line-height: 1;
@@ -272,10 +281,10 @@ ul.disc { color:#565656; text-align:left; }
 .promo span { display:block; padding-left:57px; text-align:left; }
 .promo span.general-title { font-weight: 700; font-size: 24px; padding:0; line-height:60px; }
 .promo span.title { font-weight: 700; }
-.property-promo { display:block; margin:11px 0 0 0; min-height:40px; height:100%; }
-.finest-selection { background: url('../img/why_finest_selection.png') left center no-repeat; line-height:21px; }
-.port-assistant { background: url('../img/why_port_assistant.png') left center no-repeat; line-height:33px; }
-.save-money { background: url('../img/why_save_money.png') left center no-repeat; line-height:33px; }
+.property-promo { /*display:block;*/ margin:11px 0 0 0; min-height:40px; height:100%; }
+.finest-selection { background-position: -1px 0px; line-height:21px; }
+.port-assistant { background-position: -1px -41px; line-height:33px; }
+.save-money { background-position: -1px -82px; line-height:33px; }
 /*SECTION PROMO*/
 /*BOOK SECTION*/
 .section-book {	padding: 70px 0; }
