@@ -476,7 +476,7 @@ h6.byline .label { font-size: 60%; }
 .byline time { color:#999999; font-weight:400; font-size:12px; font-family:'Source Sans Pro', sans-serif; }
 .indented.comment { padding-left: 15px; border-left:1px solid #ebebeb; }
 .push { margin-bottom: 40px; }
-.top .content  p{ font-size:14px; }
+.top .content  p { font-size:14px; }
 .bullets { margin-left: 30px; }
 /*reviews*/
 /*FOOTER*/
@@ -510,30 +510,32 @@ h6.byline .label { font-size: 60%; }
 }	
 #scroll-top a:hover { background-color: #47AEDE; filter: alpha(opacity=100); opacity: 1; }
 
+
+
+
 /*******************************MEDIA QUERY*******************************/
-// XXLarge screens
+/*XXLarge screens*/
 @media only screen and (min-width: 1921px) { 
 	.spacer { padding:1.25em 9em; }
-	.bgimg { padding-top: 690px; }
-	.bgimg h1 { width: 57%; top: 245px; font-size: 82px; left:22%; } 
+	.bgimg { padding-top: 760px; }
+	.bgimg h1 { width: 56%; top: 282px; font-size: 82px; left:22%; } 
 	.promo span { text-align:center; padding:0; }
 	.circle-img { width:161px; }
-	/*.supporticons img { max-height:274px; }*/
-	.square_customer_review { margin: 35px 0 10px 231px; }
+	.square-customer-review { margin: 35px 0 10px 231px; }
 }
 
-// XLarge screens
+/*XLarge screens*/
 @media only screen and (min-width: 1441px) and (max-width: 1920px) { 
 	.bgimg { padding-top: 690px; }
 }
 
-// Large screens
+/*Large screens*/
 @media only screen and (min-width: 1025px) and (max-width: 1440px) { }
 
-// Medium screens
+/*Medium screens*/
 @media only screen and (min-width: 641px) and (max-width: 1024px) { }
 
-// Small screens 
+/*Small screens*/
 @media only screen and (max-width: 640px) { }
 /*******************************MEDIA QUERY*******************************/
 
