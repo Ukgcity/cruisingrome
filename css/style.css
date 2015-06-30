@@ -22,7 +22,7 @@ body {
 	text-shadow: none;
 } 
 p { color: #565656; margin:0; font-weight:400; font-size:16px; text-align:left; font-family: 'Source Sans Pro', sans-serif; } 	 
-span { font-weight:400; color:#565656; font-size:18px; }
+span { font-weight:400; color:#565656; font-size:16px; }
 a { color: #333333; text-decoration: none; outline: none; cursor: pointer; } 
 a:hover { color: #666666; }
 ol, ul, li { list-style: none; }
@@ -275,7 +275,7 @@ ul.disc { color:#565656; text-align:left; }
 /*SECTION PROMO*/
 .promo span { display:block; padding-left:57px; text-align:left; }
 .promo span.general-title { font-weight: 700; font-size: 24px; padding:0; line-height:60px; }
-.promo span.title { font-weight: 700; }
+.promo span.title { font-weight: 700; font-size:18px; }
 .property-promo { display:inline-block; margin:11px 0 0 0; min-height:40px; height:100%; }
 .finest-selection { background: url('../img/why_finest_selection.png') left center no-repeat; line-height:21px; }
 .port-assistant { background: url('../img/why_port_assistant.png') left center no-repeat; line-height:33px; }
@@ -312,7 +312,7 @@ ul.disc { color:#565656; text-align:left; }
 	height:100px;  
 	margin:35px 0 10px 115px;
 }
-.left-column span { color:#8e001c; }
+.left-column .figure span { color:#8e001c; }
 .span-cr { font-family: 'Bree Serif'; font-weight: 400; font-size: 70px; color: white !important; text-shadow: 1px 1px 1px rgb(174, 172, 172); }
 .figure { background:white; 
 	-webkit-border-radius: 10px; 
@@ -345,6 +345,7 @@ span.text-comment { font-size:12px; color:#8e001c; }
 
 /*---------------------------------------------EXCURSION----------------------------------------------------------*/
 .breadcrumb { color:#f2f1ef; max-width:100%; padding-top:65px; min-height:51px; }
+.breadcrumb_lug { color:#f2f1ef; max-width:100%; /*padding-top:65px; min-height:51px;*/ }
 .excursion-img  { width:100%; min-height:397px; margin:0 !important; }
 .sidebar-bg { background-color:#f2f1ef; box-shadow:0 4px 0 0 rgba(142, 142, 142, 0.2); margin-bottom:30px; }
 /*SIDEBAR*/
@@ -465,7 +466,7 @@ table tr td { text-align:center; }
 /*reviews*/
 .reviews h3 { text-align:left; }
 .comment { text-align:left; padding:15px 0; }
-h6.byline { position: relative; margin:0;/*margin-bottom: 15px; margin-top:10px;*/ }
+h6.byline { position: relative; margin:0; display:inline-block;/*margin-bottom: 15px; margin-top:10px;*/ }
 h6.byline .label { font-size: 60%; }
 .byline a { font-size:16px; font-weight:700; }
 .byline time { color:#999999; font-weight:400; font-size:12px; font-family:'Source Sans Pro', sans-serif; }
