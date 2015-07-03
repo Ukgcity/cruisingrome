@@ -343,8 +343,7 @@ span.text-comment { font-size:12px; color:#8e001c; }
 /*---------------------------------------------GENERAL PAGE----------------------------------------------------------*/
 
 /*---------------------------------------------EXCURSION----------------------------------------------------------*/
-.breadcrumb { color:#f2f1ef; max-width:100%; padding-top:65px; min-height:51px; }
-.breadcrumb_lug { color:#f2f1ef; max-width:100%; /*padding-top:65px; min-height:51px;*/ }
+.breadcrumb { color:#f2f1ef; max-width:100%; min-height:51px; }
 .excursion-img  { width:100%; min-height:397px; margin:0 !important; }
 .sidebar-bg { background-color:#f2f1ef; box-shadow:0 4px 0 0 rgba(142, 142, 142, 0.2); margin-bottom:30px; }
 /*SIDEBAR*/
