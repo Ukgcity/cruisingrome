@@ -530,12 +530,12 @@ h6.byline .label { font-size: 60%; }
 }
 
 @media only screen and (min-width: 872px) { 
-	#navigation { display: none; }
         .nav-button { display: none; }
-	#for_mobile_navi { display: none; }
+	#for-mobile-navi { display: none; }
 }    
 
 @media only screen and (max-width: 871px) { 
+	#navigation { display: none; }
 /* --- Mobile Toggle Button --- */
 	.nav-button { 
 		display: block;
@@ -560,6 +560,9 @@ h6.byline .label { font-size: 60%; }
 		-o-background-size: 22px; 
 		background-size: 22px; 
 		z-index: 999;
+		position: absolute;
+		top:7px;
+		left:10px;
 	}   
 /* --- Mobile Toggle Button --- */
 
@@ -572,7 +575,7 @@ h6.byline .label { font-size: 60%; }
 		overflow: hidden; 
 		padding: 0; 
 		position: fixed;
-		top: 32px; 
+		/*top: 32px;*/
 		width: 100%; 
 		z-index: 998; 
 	} 
