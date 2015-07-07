@@ -54,7 +54,7 @@ figure { width:100%; margin:0; }
 	padding-top: 575px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	/*background-position: center center;*/
 	position: relative;
 }
 .bgimg h1 { 
@@ -69,6 +69,8 @@ figure { width:100%; margin:0; }
 	text-align:center;
 	left:19%;
 	line-height: 1.21;
+	text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.26);
+
 }  
 .overlay { position:absolute; width:100%; height:100%; top:0; left:0; z-index:1; opacity: 0.15; }
    /*bg img*/
@@ -216,7 +218,7 @@ ul.disc { color:#565656; text-align:left; }
 /*NAVIGATION MENU*/
 
 /*LANGUAGE*/
-.lan-header { float: left; position: relative; width: 100px; height: 65px; }
+.lan-header { float: left; position: relative; width: 100px; height: 70px; }
 .lan-header:hover { background: #f1f2f4; }
 .lan-header:hover .lan-list { display: block !important; }
 .lan-header .lan-current-item { display: block; background-position: 18px center; height: 100%; }
@@ -521,7 +523,7 @@ h6.byline .label { font-size: 60%; }
 /*******************************MEDIA QUERY*******************************/
 /*XXLarge screens*/
 @media only screen and (min-width: 1921px) { 
-	.spacer { padding:1.25em 9em; }
+	/*.spacer { padding:1.25em 9em; }*/
 	.bgimg { padding-top: 760px; }
 	.bgimg h1 { width: 56%; top: 282px; font-size: 82px; left:22%; } 
 	.circle-img { width:161px; }
@@ -535,13 +537,17 @@ h6.byline .label { font-size: 60%; }
 
 /*Large screens*/
 @media only screen and (min-width: 1025px) and (max-width: 1440px) { 
+/*standart*/
 }
 
 @media only screen and (min-width: 872px) { 
 	.top-bar .topbar-toogle { display:none; }
 }    
 
-@media only screen and (max-width: 871px) { 
+@media only screen and (max-width: 871px) {
+	.spacer { padding:0; } 
+	#navigation { display:none; }
+	.title-area { width:75%; }
 	.top-bar .topbar-toogle { position:absolute; right:0; top:0; }	
 	.top-bar .topbar-toogle a {
 		color:#6d12d8;
@@ -561,7 +567,6 @@ h6.byline .label { font-size: 60%; }
 		color:#6d12d8;
 		position:relative;	
 	}
-	/*.top-bar .topbar-toogle.icon-menu a span::after {*/
 	.title-area .topbar-toogle span::after {
 		content:"";
 		position:absolute;
@@ -573,63 +578,13 @@ h6.byline .label { font-size: 60%; }
 		box-shadow:0 0 0 1px #8e001c,0 7px 0 1px #8e001c,0 14px 0 1px #8e001c;
 		width:16px;	
 	}
-/* --- Mobile Toggle Button --- */
-	/*.nav-button { 
-		display: block;
-		position: fixed;
-		top: 40px; 
-		left: 3%; 
-		width: 46px; 
-		height: 35px; 
-		background-image: url(menu-icon-large.png); 
-		background-color: #47AEDE; 
-		cursor: pointer; 
-		border-radius: 4px; 
-		border: 1px solid #258CBC; 
-		text-indent: -9999px; 
-	}
-	.nav-button.open { background-image: url(close-icon-large.png); } 
-	.nav-button, .nav-button.open {  
-		background-position: center center; 
-		background-repeat: no-repeat; 
-		-webkit-background-size: 22px; 
-		-moz-background-size: 22px; 	
-		-o-background-size: 22px; 
-		background-size: 22px; 
-		z-index: 999;
-		position: absolute;
-		top:7px;
-		left:10px;
-	}*/   
-/* --- Mobile Toggle Button --- */
+	.bgimg { padding-top: 450px; }
+	.bgimg h1 { font-size:47px; top:160px; }
+	.finest-selection, .port-assistant, .save-money { background-size:30px; }
+	.promo span { padding-left:40px; }
+	.promo span.general-title { font-size: 21px; }
+	.promo span { font-size:13px; }
 
-/* --- Mobile Menu --- */
-	/*.my_custom_menu {
-		display: block;
-		background-color: #47AEDE; 
-		height: 50px; 
-		margin: 0; 
-		overflow: hidden; 
-		padding: 0; 
-		position: fixed;*/
-		/*top: 32px;*/
-		/*width: 100%; 
-		z-index: 998; 
-	} 
-	.my_custom_menu.open { height: auto; padding-top: 50px; }    
-	.my_custom_menu li { background: none repeat scroll 0 0 #414141; display: none; width: 100%; }   
-	.my_custom_menu li a { 
-		display: block; 
-		width: 90%; 
-		padding: 8px 5%; 
-		font-size: 14px; 
-		color: #BEBEBE; 
-		border-top: 1px solid #555555; 
-		text-decoration: none; 
-	}        
-	.my_custom_menu li a:hover { color: #FFF; } 
-	.my_custom_menu.open li, .my_custom_menu li:hover ul { display: block; }*/  
-/* --- Mobile Menu --- */
 }
 
 
