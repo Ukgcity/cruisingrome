@@ -77,7 +77,6 @@ figure { width:100%; margin:0; }
 .bg-white { background-color:#f8f8f8; }
 .bg-grey  { background-color:#f3f3f3; }
    /*spacers*/
-.spacer { padding:0 7%; }
 .spacer-for-circle { padding-top:2.188em; }
 .spacer-for-circle:last-child { padding-bottom:2.188em; }
 .spacer-for-h2 { padding:50px 0; }
@@ -269,7 +268,7 @@ ul.disc { color:#565656; text-align:left; }
 .general-bgimg .overlay { background-color: black; }
 /*BACKGROUND IMAGE*/
 /*SECTION PROMO*/
-.promo span { display:block; padding-left:57px; text-align:left; }
+.promo span { display:block; padding-left:53px; text-align:left; }
 .promo span.general-title { font-weight: 700; font-size: 24px; padding:0; line-height:60px; }
 .promo span.title { font-weight: 700; font-size:18px; }
 .property-promo { display:inline-block; margin:11px 0 0 0; min-height:40px; height:100%; }
@@ -334,7 +333,7 @@ ul.disc { color:#565656; text-align:left; }
 .customer-reviews .right-column hr { margin-left:55px; }
 .reviews-sign { font-size:20px; font-weight:bold; color:#f2f2f2; }
 .orbit-container .orbit-slide-number, .orbit-container .orbit-timer,
-.orbit-container .orbit-prev, .orbit-container .orbit-next { display:none; }
+.orbit-container .orbit-prev, .orbit-container .orbit-next { display:none !important; }
 .orbit-bullets li { background:#ffffff; }
 .orbit-bullets li.active { background:#8e001c; }
 /*CUSTOMER REVIEWS*/
@@ -524,6 +523,7 @@ h6.byline .label { font-size: 60%; }
 /*XXLarge screens*/
 @media only screen and (min-width: 1921px) { 
 	/*.spacer { padding:1.25em 9em; }*/
+	.spacer { padding:0 7%; }
 	.bgimg { padding-top: 760px; }
 	.bgimg h1 { width: 56%; top: 282px; font-size: 82px; left:22%; } 
 	.circle-img { width:161px; }
@@ -536,8 +536,21 @@ h6.byline .label { font-size: 60%; }
 }
 
 /*Large screens*/
-@media only screen and (min-width: 1025px) and (max-width: 1440px) { 
+@media only screen and (min-width: 1072px) and (max-width: 1440px) { 
 /*standart*/
+	.spacer { padding:0 7%; }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1084px) { 
+	.spacer { padding:0; }
+	.bgimg { padding-top: 420px; }
+	.bgimg h1 { font-size:52px; top:150px; left:15%; width:75%; }
+	.finest-selection, .port-assistant, .save-money { background-size:35px; }
+	.promo span { padding-left:40px; }
+	.promo span.general-title { font-size:20px; }            
+	.promo span.title { font-size:18px; }
+	.menu-item-subtitle { font-size:13px; }
+
 }
 
 @media only screen and (min-width: 872px) { 
@@ -545,7 +558,7 @@ h6.byline .label { font-size: 60%; }
 }    
 
 @media only screen and (max-width: 871px) {
-	.spacer { padding:0; } 
+/*TOOGLE MENU*/
 	#navigation { display:none; }
 	.title-area { width:75%; }
 	.top-bar .topbar-toogle { position:absolute; right:0; top:0; }	
@@ -561,12 +574,7 @@ h6.byline .label { font-size: 60%; }
 		line-height:3.75rem;		
 	}
 	.title-area .topbar-toogle span { display:table-cell; vertical-align:middle; height:70px; }
-	.top-bar .topbar-toogle.icon-menu a {
-		height:70px;
-		padding:0 2.8125rem 0 1.25rem;
-		color:#6d12d8;
-		position:relative;	
-	}
+	.top-bar .topbar-toogle.icon-menu a { height:70px; padding:0 2.8125rem 0 1.25rem; color:#6d12d8; position:relative; }
 	.title-area .topbar-toogle span::after {
 		content:"";
 		position:absolute;
@@ -578,16 +586,27 @@ h6.byline .label { font-size: 60%; }
 		box-shadow:0 0 0 1px #8e001c,0 7px 0 1px #8e001c,0 14px 0 1px #8e001c;
 		width:16px;	
 	}
-	.bgimg { padding-top: 450px; }
-	.bgimg h1 { font-size:47px; top:160px; }
-	.finest-selection, .port-assistant, .save-money { background-size:30px; }
-	.promo span { padding-left:40px; }
-	.promo span.general-title { font-size: 21px; }
-	.promo span { font-size:13px; }
-
+/*TOOGLE MENU*/
 }
 
-
+@media only screen and (max-width: 800px) { 
+	h2 { font-size:25px; }
+	h3 { font-size:12px; }
+	.spacer { padding:0; }
+	.spacer-for-h2 { padding:25px 0; } 
+	.bgimg { padding-top: 330px; }
+	.bgimg h1 { font-size:42px; top:120px; left:10%; width:80%; }
+	.finest-selection, .port-assistant, .save-money { background-size:30px; }
+	.promo span { padding-left:33px; }
+	.promo span.general-title { font-size: 15px; }
+	.promo span.title { font-size:13px; }
+	.menu-item-subtitle { font-size:10px; } 
+	.section-book { padding:40px 0; }
+	.book-img { width:90px; height:90px; }
+	.section-book h3 { font-size:17px; }
+	.p-text { font-size:11px; }
+}
+ 
 /*Medium screens*/
 @media only screen and (min-width: 641px) and (max-width: 1024px) { }
 
