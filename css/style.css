@@ -536,21 +536,40 @@ h6.byline .label { font-size: 60%; }
 }
 
 /*Large screens*/
-@media only screen and (min-width: 1072px) and (max-width: 1440px) { 
+@media only screen and (min-width: 1085px) and (max-width: 1440px), screen and (max-width: 640px) { 
 /*standart*/
 	.spacer { padding:0 7%; }
+	.finest-selection, .port-assistant, .save-money { background-size:40px; }
+	.promo span { padding-left:53px; }
+	.promo span.general-title { font-size: 24px; }
+	.promo span.title { font-size:18px; }
+	.book-img { width:125px; height:125px; }
+	.imgHolder span { font-size:18px; }
+	.imgholder-label-yellow:before { 
+		border-right:13px solid transparent; 
+		border-top:13px solid #ffb300; 
+		border-bottom:14px solid #ffb300; 
+	}
+	.comboimg img { width:245px; height:164px; }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1084px) { 
+	h2 { font-size:29px; }
 	.spacer { padding:0; }
 	.bgimg { padding-top: 420px; }
-	.bgimg h1 { font-size:52px; top:150px; left:15%; width:75%; }
+	.bgimg h1 { font-size:52px; top:150px; left:15%; width:76%; }
 	.finest-selection, .port-assistant, .save-money { background-size:35px; }
-	.promo span { padding-left:40px; }
+	.promo span { padding-left:39px; }
 	.promo span.general-title { font-size:20px; }            
 	.promo span.title { font-size:18px; }
 	.menu-item-subtitle { font-size:13px; }
-
+	.section-book h3 { font-size:22px; }
+	.spacer-for-h2 { padding:35px 0; }
+	.spacer-padding-bottom-text { padding-bottom:40px; }
+	.combo-deals .button { padding:11px 47px; }
+	.button { font-size:23px; }
+	.square-customer-review { margin:0; }
+	.imgHolder span:before { right:-13px; }
 }
 
 @media only screen and (min-width: 872px) { 
@@ -589,29 +608,54 @@ h6.byline .label { font-size: 60%; }
 /*TOOGLE MENU*/
 }
 
-@media only screen and (max-width: 800px) { 
+@media only screen (min-width: 641px) and (max-width: 800px) { 
 	h2 { font-size:25px; }
-	h3 { font-size:12px; }
+	h3, span, .promo span.general-title, span.header-text { font-size:15px; }
 	.spacer { padding:0; }
 	.spacer-for-h2 { padding:25px 0; } 
+	.spacer-padding-bottom-text { padding-bottom:30px; }
 	.bgimg { padding-top: 330px; }
 	.bgimg h1 { font-size:42px; top:120px; left:10%; width:80%; }
 	.finest-selection, .port-assistant, .save-money { background-size:30px; }
 	.promo span { padding-left:33px; }
-	.promo span.general-title { font-size: 15px; }
-	.promo span.title { font-size:13px; }
+	.promo span.title, .p-text, .features-blog p { font-size:13px; }
 	.menu-item-subtitle { font-size:10px; } 
 	.section-book { padding:40px 0; }
 	.book-img { width:90px; height:90px; }
-	.section-book h3 { font-size:17px; }
-	.p-text { font-size:11px; }
+	.section-book h3, .reviews-sign { font-size:17px; }
+	.imgHolder span { font-size:14px; }
+	.imgHolder span:before { right:-8px; }
+	.imgholder-label-yellow:before { border-right:8px solid transparent; border-top:10px solid #ffb300; border-bottom:11px solid #ffb300; }	
+	.comboimg img { width:136px; height:91px; }
+	.button { font-size:20px; }
+	.combo-deals .button { padding:7px 30px; }
+	.customer-reviews .left-column, .right-column { min-height:598px; }
+	.customer-reviews h2 { font-size:21px; }
+	.square-customer-review { width:85px; height:85px; margin:0; }
+	.span-cr { font-size:53px; }
+	.figure:after { margin:-77px 0 0 -37px; }
+	.left-column p { padding:11px 0px 2px 9px; }
+	.img-padding { padding:20px 0; }
+	.right-column.supporticons img { width:50px; }
+	.right-column p { margin:0px 0px 40px 55px; font-size:15px; }
+	.footer-top h3 { font-size:18px; }
+	.footer-top a { font-size:14px; word-wrap:break-word; }
 }
  
 /*Medium screens*/
 @media only screen and (min-width: 641px) and (max-width: 1024px) { }
 
 /*Small screens*/
-@media only screen and (max-width: 640px) { }
+@media only screen and (max-width: 640px) { 
+	h3,.p-text { font-size:18px; }
+	.spacer { padding:0; }
+	.bgimg { padding-top:40%; }
+	.bgimg h1 { font-size:1.2em; top:26%; left:13%; width:77%; }
+	/*.menu-item-subtitle { font-size:16px; } 
+	.section-book h3, .reviews-sign { font-size:24px; }*/
+	.last-container { text-align:left; }
+	.last-container hr { margin:0; }
+}     
 /*******************************MEDIA QUERY*******************************/
 
 
