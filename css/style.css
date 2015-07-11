@@ -40,6 +40,7 @@ fieldset { border:none; }
 }
 button:hover, button:focus, .button:hover, .button:focus { background-color:#ffb300; }
 figure { width:100%; margin:0; }
+.margin-figure { margin-top:35px; }
 .row { margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto; max-width:120em; }
 .centered-text { text-align:center; }
 .container { position:relative; margin:0 auto; width:78% /*980px*/; text-align:center; }  /*?*/
@@ -51,7 +52,7 @@ figure { width:100%; margin:0; }
 .bgimg { 
 	display: block;                                                                    
 	max-width: 100%;
-	padding-top: 575px;
+	padding-top: 40%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	/*background-position: center center;*/
@@ -272,6 +273,7 @@ ul.disc { color:#565656; text-align:left; }
 .promo span.general-title { font-weight: 700; font-size: 24px; padding:0; line-height:60px; }
 .promo span.title { font-weight: 700; font-size:18px; }
 .property-promo { display:inline-block; margin:11px 0 0 0; min-height:40px; height:100%; }
+.finest-selection, .port-assistant, .save-money { background-size:40px; }
 .finest-selection { background: url('../img/why_finest_selection.png') left center no-repeat; line-height:21px; }
 .port-assistant { background: url('../img/why_port_assistant.png') left center no-repeat; line-height:33px; }
 .save-money { background: url('../img/why_save_money.png') left center no-repeat; line-height:33px; }
@@ -521,23 +523,25 @@ h6.byline .label { font-size: 60%; }
 
 /*******************************MEDIA QUERY*******************************/
 /*XXLarge screens*/
-@media only screen and (min-width: 1921px) { 
+@media only screen and (min-width:1921px) { 
 	/*.spacer { padding:1.25em 9em; }*/
 	.spacer { padding:0 7%; }
-	.bgimg { padding-top: 760px; }
 	.bgimg h1 { width: 56%; top: 282px; font-size: 82px; left:22%; } 
 	.circle-img { width:161px; }
 	.square-customer-review { margin: 35px 0 10px 231px; }
 }
 
 /*XLarge screens*/
-@media only screen and (min-width: 1441px) and (max-width: 1920px) { 
-	.bgimg { padding-top: 690px; }
+@media only screen and (min-width:1441px) and (max-width:1920px) { 
 }
 
-/*Large screens*/
-@media only screen and (min-width: 1085px) and (max-width: 1440px), screen and (max-width: 640px) { 
-/*standart*/
+/*Medium screens and small screens*/
+@media only screen and (min-width:1085px) and (max-width:1440px)  {
+	.spacer-padding-bottom-text { padding-bottom:70px; }
+}
+
+@media only screen and (max-width: 640px), (min-width:1085px) and (max-width:1440px)  {  
+	h3,.p-text { font-size:18px; }
 	.spacer { padding:0 7%; }
 	.finest-selection, .port-assistant, .save-money { background-size:40px; }
 	.promo span { padding-left:53px; }
@@ -553,10 +557,10 @@ h6.byline .label { font-size: 60%; }
 	.comboimg img { width:245px; height:164px; }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1084px) { 
+/*Medium screens*/
+@media only screen and (min-width:800px) and (max-width:1084px) { 
 	h2 { font-size:29px; }
 	.spacer { padding:0; }
-	.bgimg { padding-top: 420px; }
 	.bgimg h1 { font-size:52px; top:150px; left:15%; width:76%; }
 	.finest-selection, .port-assistant, .save-money { background-size:35px; }
 	.promo span { padding-left:39px; }
@@ -572,11 +576,11 @@ h6.byline .label { font-size: 60%; }
 	.imgHolder span:before { right:-13px; }
 }
 
-@media only screen and (min-width: 872px) { 
+@media only screen and (min-width:872px) { 
 	.top-bar .topbar-toogle { display:none; }
 }    
 
-@media only screen and (max-width: 871px) {
+@media only screen and (max-width:871px) {
 /*TOOGLE MENU*/
 	#navigation { display:none; }
 	.title-area { width:75%; }
@@ -608,13 +612,13 @@ h6.byline .label { font-size: 60%; }
 /*TOOGLE MENU*/
 }
 
-@media only screen (min-width: 641px) and (max-width: 800px) { 
+/*Medium screens*/
+@media only screen and (min-width:641px) and (max-width:800px) { 
 	h2 { font-size:25px; }
 	h3, span, .promo span.general-title, span.header-text { font-size:15px; }
 	.spacer { padding:0; }
 	.spacer-for-h2 { padding:25px 0; } 
 	.spacer-padding-bottom-text { padding-bottom:30px; }
-	.bgimg { padding-top: 330px; }
 	.bgimg h1 { font-size:42px; top:120px; left:10%; width:80%; }
 	.finest-selection, .port-assistant, .save-money { background-size:30px; }
 	.promo span { padding-left:33px; }
@@ -641,18 +645,23 @@ h6.byline .label { font-size: 60%; }
 	.footer-top h3 { font-size:18px; }
 	.footer-top a { font-size:14px; word-wrap:break-word; }
 }
- 
-/*Medium screens*/
-@media only screen and (min-width: 641px) and (max-width: 1024px) { }
 
 /*Small screens*/
 @media only screen and (max-width: 640px) { 
-	h3,.p-text { font-size:18px; }
 	.spacer { padding:0; }
-	.bgimg { padding-top:40%; }
+	.spacer-padding-bottom-text { padding:25px 0; }
+	.spacer-for-h2 { padding:20px 0; }
 	.bgimg h1 { font-size:1.2em; top:26%; left:13%; width:77%; }
-	/*.menu-item-subtitle { font-size:16px; } 
-	.section-book h3, .reviews-sign { font-size:24px; }*/
+	.imgHolder { margin:0 auto; width:65%; }
+	.combo-deals .button { padding:10px 35px; }
+	.customer-reviews .left-column, .right-column { min-height:450px; }
+	.square-customer-review { margin:0 0 10px 90px; }
+	.figure { margin-left:20px; }
+	.margin-figure { margin-top:0; margin-bottom:15px; }
+	.img-padding { padding:20px 0; }
+	.right-column.supporticons img { margin:0 0 0 32px; }
+	.right-column p { margin:0 0 40px 30px; }
+	.customer-reviews .right-column hr { margin-left:32px; }
 	.last-container { text-align:left; }
 	.last-container hr { margin:0; }
 }     
